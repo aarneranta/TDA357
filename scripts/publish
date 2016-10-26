@@ -1,0 +1,22 @@
+#!/bin/sh -eux
+
+RHOST=detrez@remote12.chalmers.se
+RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2016/course/TDA357/VT2016/
+VENV=$(pwd)/_virtualenv
+
+if [ ! -d $VENV ]; then
+  virtualenv $VENV;
+fi
+
+set +u
+. $VENV/bin/activate
+set -u
+
+pip install sphinx
+
+make clean html
+make -C _tex
+rsync -priv --delete --chmod=F664,D775 --checksum $* \
+  --exclude=qconv \
+  _build/html/ \
+  ${RHOST}:${RPATH}

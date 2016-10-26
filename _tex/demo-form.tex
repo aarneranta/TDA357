@@ -1,0 +1,52 @@
+\documentclass[10pt]{article}
+\usepackage[a5paper,margin=.5cm]{geometry}
+\begin{document}
+\newcommand{\s}[1]{
+  \multicolumn{3}{|l|}{\textbf{#1}} \\\hline
+}
+
+\newcommand{\h}[1]{
+  \multicolumn{3}{|p{11cm}|}{\textit{#1}} \\\hline
+}
+\newcommand{\f}[1]{
+  #1 &&\\\hline
+}
+\small
+
+\section*{Demo sheet, Databases VT2016}
+
+\vfill
+Date:\makebox[3cm]{\dotfill}\hfill  Fire group number: \makebox[3cm]{\dotfill}
+
+Before demonstrating, ensure that the data you have put into your system can
+handle all of the following test cases. Please prepare before you ask us to
+check your application, so that running through these cases will be smooth.
+Fill in the ids (student identifiers and course codes) that you will use in the
+demonstration in the table bellow. When demonstrating your application it is
+useful if you also have psql or PostgreSQL Studio running, so that you can show
+the state of your tables and views.
+
+\vfill
+
+\begin{tabular}{|p{7cm}|p{2cm}|p{2cm}|}
+\hline & Student & Course \\ \hline
+\s{Listing information}
+\f{List information for a student who does not fulfil the requirements for graduation.}
+\f{List information for a student who fulfils the requirements for graduation.}
+\s{Registering and unregistering from courses}
+\f{Register a student for an unrestricted course, and show that they end up registered.}
+\f{Register the same student for the same course again, and show that the student gets an error message.}
+\f{Unregister the student from the course.}
+\f{Unregister the student again from the same course and show that it doesn't crash your program.}
+\f{Register a student for a course that they don't have the prerequisites for, and show that the registration doesn't go through.}
+\s{Restricted courses}
+\h{Before demonstrating, set up a restricted course with at least two students in the queue.}
+\f{Unregister a registered student from this course. Show that the first student from the queue ended up as registered.}
+\f{Register the unregistered student again. Show that they end up last in the queue.}
+\f{Unregister this student again. Show that the student was removed from the queue, that no student was registered on the course as a result of this, and that the queue otherwise stays as before.}
+\s{Overfull courses}
+\h{Before demonstrating, set up an overfull restricted course (i.e. one with more students registered than there are places on the course) in the database directly, and with no students on the waiting list.}
+\f{Attempt to register a student for the overfull course. Show that this student is placed on the waiting list.}
+\f{Unregister a student from the overfull course. Show that no student is moved from the queue to being registered as a result.}
+\end{tabular}
+\end{document}

@@ -1,0 +1,6 @@
+Airports(_code_,city)
+FlightCodes(_code_, airlineName)
+Flights(origin, destination, departure, arrival, _code_)
+  origin → Airports.code
+  destination → Airports.code
+  code → FlightCodes.code

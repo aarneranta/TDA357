@@ -1,0 +1,14 @@
+CREATE OR REPLACE FUNCTION delete_page() RETURNS TRIGGER AS $$
+BEGIN
+  DELETE FROM PageRevisions WHERE name = OLD.name;
+  INSERT INTO deletelog VALUES (old.name, NOW());
+
+  RETURN OLD;
+END
+$$ LANGUAGE 'plpgsql';
+
+DROP TRIGGER IF EXISTS DeletePage ON Pages;
+
+CREATE TRIGGER DeletePage INSTEAD OF DELETE ON Pages
+FOR EACH ROW
+EXECUTE PROCEDURE delete_page();

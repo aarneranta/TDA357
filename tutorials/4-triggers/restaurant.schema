@@ -1,0 +1,3 @@
+Tables(_number_, seats)
+Bookings(_name_, _time_, nbpeople, table)
+  table → Tables.number

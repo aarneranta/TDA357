@@ -64,6 +64,12 @@ Slides:
 Lecture 2, E-R diagrams
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+Book sections
+  - |book2e|: 4.1-4.6
+
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture2.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture2.pdf>`
+
 
 .. _lecture3:
 

@@ -73,57 +73,123 @@ Slides:
 
 .. _lecture3:
 
-Lecture 3, Functional dependencies and normal forms
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 3, Functional dependencies, BCNF, 3NF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: 3.1-3.5
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture3a.pdf>`
+  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture3b.pdf>`
 
 .. _lecture4:
 
-Lecture 4, Functional dependencies and normal forms
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 4, Independencies, 4NF
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: 3.6
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture4.pdf>`
 
 .. _lecture5:
 
-Lecture 5, SQL 1
-~~~~~~~~~~~~~~~~
+Lecture 5, SQL 1, Relational Algebra
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture5.pdf>`
 
 .. _lecture6:
 
-Lecture 6, SQL2
-~~~~~~~~~~~~~~~
+Lecture 6, SQL 2, Relational Algebra, Views
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture6.pdf>`
 
 .. _lecture7:
 
-Lecture 7, Table modification, triggers
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 7, SQL 3, Relational Algebra
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture7.pdf>`
 
 .. _lecture8:
 
-Lecture 8, Relational algebra, query compilation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 8, SQL 4, Assertions, Triggers
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture8.pdf>`
 
 .. _lecture9:
 
 Lecture 9, Embedded SQL
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture9.pdf>`
+
 .. _lecture10:
 
-Lecture 10, Transactions, authorization, indexes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 10, Transactions, authorization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture10.pdf>`
 
 .. _lecture11:
 
-Lecture 11, XML and NoSQL
-~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 11, Indexes, non-natural keys, denormalization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture11.pdf>`
 
 .. _lecture12:
+Lecture 12, XML and NoSQL
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. Lecture 12, Databases at Spotify (guest lecture by Oscar Söderlund, Spotify)
-.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Book sections
+  - |book2e|: ???
+
+Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture12a.pdf>`
+  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture12b.pdf>`
 
 .. _lecture13:
 
-.. Lecture 13, Exam training
+.. Lecture 13, Databases at Spotify (guest lecture by Oscar Söderlund, Spotify)
+.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. _lecture14:
+
+.. Lecture 14, Exam training
 .. ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. |book2e| replace:: Database Systems: The Complete Book, second edition

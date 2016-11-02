@@ -1,7 +1,7 @@
 Assignment submission
 =====================
 
-.. _Fire submission system: https://databases-vt16.fire.cse.chalmers.se/
+.. _Fire submission system: https://databases-lp2-16.frs.cse.chalmers.se/
 
 Assignment submissions will be done through the `Fire submission system`_.
 

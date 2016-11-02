@@ -46,4 +46,4 @@ Information
    Schedule <https://se.timeedit.net/web/chalmers/db1/public/ri157XQQ709Z50Qv17043gZ6y6Y7002Q5Y61Y5.html>
    Course Google Group <https://groups.google.com/forum/#!forum/tda357-ht2016>
    Student Portal Entry <https://student.portal.chalmers.se/sv/chalmersstudier/minkursinformation/Sidor/SokKurs.aspx?course_id=24682&parsergrp=3>
-   Fire submission system <https://databases-ht16.fire.cse.chalmers.se/>
+   Fire submission system <https://databases-lp2-16.frs.cse.chalmers.se/>

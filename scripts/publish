@@ -1,22 +1,12 @@
 #!/bin/sh -eux
 
-RHOST=detrez@remote12.chalmers.se
-RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2016/course/TDA357/VT2016/
-VENV=$(pwd)/_virtualenv
-
-if [ ! -d $VENV ]; then
-  virtualenv $VENV;
-fi
-
-set +u
-. $VENV/bin/activate
-set -u
-
-pip install sphinx
+RHOST=acker@remote12.chalmers.se
+RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2016/course/TDA357/HT2016/
 
 make clean html
 make -C _tex
-rsync -priv --delete --chmod=F664,D775 --checksum $* \
-  --exclude=qconv \
+rsync -priv --delete --checksum $* \
   _build/html/ \
   ${RHOST}:${RPATH}
+
+ssh ${RHOST} "find $RPATH -type d -exec chmod u=rwx,g=rwxs,o=rx {} \; && find $RPATH -type f -exec chmod u=rwx,g=rwx,o=rx {} \;"

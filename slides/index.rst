@@ -79,7 +79,7 @@ Lecture 3, Functional dependencies, BCNF, 3NF
 Book sections
   - |book2e|: 3.1-3.5
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
+Slides:
   - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture3a.pdf>`
   - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture3b.pdf>`
 

@@ -80,8 +80,8 @@ Book sections
   - |book2e|: 3.1-3.5
 
 Slides:
-  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture3a.pdf>`
-  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture3b.pdf>`
+  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture3a.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture3a.pdf>`
+  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture3b.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture3b.pdf>`
 
 .. _lecture4:
 

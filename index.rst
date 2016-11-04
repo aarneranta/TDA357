@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-11-04
+  Uploaded slides for lecture 3, removed "What?" boxes on the quiz results in lecture 2 slides
+
 2016-11-01
   Archived old slides, published slides of Lecture 1, updated git repo URL
 

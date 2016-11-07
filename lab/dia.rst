@@ -6,8 +6,7 @@ Entity-Relationship diagrams, these notes will help you to get started.
 
 #. Start **dia** using the command :command:`dia`.
 
-   If the "dia" command is not found, `please read these
-   notes <unsupported.shtml>`__.
+   If the "dia" command is not found, install it first.
 
 #. Select the E/R modelling tools. To do this, use the drop-down menu in
    the "Dia v0.97" window (Other sheets → ER).

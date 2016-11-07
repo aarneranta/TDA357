@@ -206,9 +206,8 @@ An XML document conforming to the DTD above:
 XPath
 -----
 
-(These solutions have been tested using an `on-line XPath
-tester <http://www.mizar.dk/XPath/Default.aspx>`__ and also the XPath
-progam on the Linux system at Chalmers.)
+(These solutions have been tested using an on-line XPath
+tester and also the XPath progam on the Linux system at Chalmers.)
 
 -  Find all courses that have at least 20 students:
 -  List all professors at the school:

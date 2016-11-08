@@ -26,6 +26,8 @@ News
 2016-11-08
   The deadlines for the labs have been moved back by 1 week.
 
+  How to fix DIA on MACs: `DIA_FIX <http://navkirats.blogspot.se/2014/10/dia-diagram-mac-osx-yosemite-fix-i-use.html>`__
+
 2016-11-04
   Uploaded slides for lecture 3, removed "What?" boxes on the quiz results in lecture 2 slides
 
@@ -35,7 +37,6 @@ News
 2016-10-20
   First version of Autumn Term 2016 web page. **Based on copying last
   year's course page, therefore not yet reliable.**
-
 Information
 ~~~~~~~~~~~
 

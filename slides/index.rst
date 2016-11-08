@@ -36,13 +36,15 @@ November 1    :ref:`lecture1`
 November 2    :ref:`lecture2`
 November 4    :ref:`lecture3`
 November 8    :ref:`lecture4`
-November 9    :ref:`lecture5`
-November 15   :ref:`lecture6`
-November 16   :ref:`lecture7`
-November 22   :ref:`lecture8`
-November 23   :ref:`lecture9`
-November 29   :ref:`lecture10`
-November 30   :ref:`lecture11`
+November 9    Recap lecture
+November 15   :ref:`lecture5`
+November 16   :ref:`lecture6`
+November 22   :ref:`lecture7`
+November 23   :ref:`lecture8`
+November 29   :ref:`lecture9`
+November 30   :ref:`lecture10`
+December 6    :ref:`lecture11`
+December 7    :ref:`lecture12`
 ===========   ================
 
 

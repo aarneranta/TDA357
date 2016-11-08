@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-11-08
+  The deadlines for the labs have been moved back by 1 week.
+
 2016-11-04
   Uploaded slides for lecture 3, removed "What?" boxes on the quiz results in lecture 2 slides
 

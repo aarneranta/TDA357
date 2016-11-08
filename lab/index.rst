@@ -229,7 +229,7 @@ schema that could later be implemented in PostgreSQL.
 
     **No .doc files!**
 
-    **Deadline: Sunday 2016-11-13 before 23.59**
+    **Deadline: Sunday 2016-11-20 before 23.59**
 
 .. _task2:
 
@@ -285,7 +285,7 @@ searching for functional dependencies:
 
     **No .doc files!**
 
-    **Deadline: Sunday 2016-11-20 before 23.59**
+    **Deadline: Sunday 2016-11-27 before 23.59**
 
 .. _task3:
 
@@ -375,7 +375,7 @@ construct the database by implementing the database schema in a database engine
     everything <delete-everything>`) and then running
     your SQL files.
 
-    **Deadline: Sunday 2016-11-27 before 23.59**
+    **Deadline: Sunday 2016-12-04 before 23.59**
 
 .. _task4:
 
@@ -446,7 +446,7 @@ task 5, that we will check the complete application for.**
     Note that SQL code should be in plain text format. **Make sure that
     PostgreSQL can execute your files before you hand them in.**
 
-    **Deadline: Sunday 2016-12-04 before 23.59**
+    **Deadline: Sunday 2016-12-11 before 23.59**
 
 .. _task5:
 

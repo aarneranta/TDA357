@@ -91,8 +91,8 @@ Lecture 4, Independencies, 4NF
 Book sections
   - |book2e|: 3.6
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
-  - :download:`one per page <../_static/archive/ht2016/1pp/lecture4.pdf>`
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture4.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture4.pdf>`
 
 .. _lecture5:
 

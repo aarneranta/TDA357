@@ -1,6 +1,7 @@
 #!/bin/sh -eux
 
-RHOST=acker@remote12.chalmers.se
+USERNAME=acker
+RHOST=$USERNAME@remote12.chalmers.se
 RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2016/course/TDA357/HT2016/
 
 make clean html
@@ -9,4 +10,4 @@ rsync -priv --delete --checksum $* \
   _build/html/ \
   ${RHOST}:${RPATH}
 
-ssh ${RHOST} "find $RPATH -type d -exec chmod u=rwx,g=rwxs,o=rx {} \; && find $RPATH -type f -exec chmod u=rwx,g=rwx,o=rx {} \;"
+ssh ${RHOST} "find $RPATH -type d -exec chmod u=rwx,g=rwxs,o=rx {} \; && find $RPATH -type f -exec chmod u=rwx,g=rwx,o=rx {} \; && chown -R $USERNAME:edu2009 $RPATH"

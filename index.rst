@@ -4,12 +4,12 @@ Databases (|version|)
 .. sidebar:: Staff HT2016
 
     - `Aarne Ranta <http://www.cse.chalmers.se/~aarne/>`_ (Examiner)
-    - `Steven Van Acker <https://www.chalmers.se/en/Staff/Pages/acker.aspx>`_ (Coordinator)
+    - `Steven Van Acker <https://www.chalmers.se/en/Staff/Pages/acker.aspx>`_ (Coordinator & Lecturer)
     - `Pablo Picazo <http://www.cse.chalmers.se/~pablop/>`_
     - `Herbert Lange <https://www.chalmers.se/sv/personal/Sidor/herbert-lange.aspx>`_
     - `Andrea Vezzosi <https://www.chalmers.se/en/Staff/Pages/vezzosi.aspx>`_
     - `Markus Aronsson <https://www.chalmers.se/sv/personal/Sidor/mararon.aspx>`_
-    - `Timon Lapawczyk `_
+    - Timon Lapawczyk
     - `Selpi <https://www.chalmers.se/en/staff/Pages/selpi.aspx>`_
 
 
@@ -22,6 +22,9 @@ University of Gothenburg course code:
 
 News
 ~~~~
+
+2016-11-09
+  Uploaded slides and kahoot-links for the design recap quiz
 
 2016-11-08
   The deadlines for the labs have been moved back by 1 week.
@@ -37,6 +40,7 @@ News
 2016-10-20
   First version of Autumn Term 2016 web page. **Based on copying last
   year's course page, therefore not yet reliable.**
+
 Information
 ~~~~~~~~~~~
 

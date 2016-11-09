@@ -36,7 +36,7 @@ November 1    :ref:`lecture1`
 November 2    :ref:`lecture2`
 November 4    :ref:`lecture3`
 November 8    :ref:`lecture4`
-November 9    Recap lecture
+November 9    :ref:`designrecapquiz`
 November 15   :ref:`lecture5`
 November 16   :ref:`lecture6`
 November 22   :ref:`lecture7`
@@ -95,6 +95,18 @@ Book sections
 
 Slides:
   - :download:`one per page <../_static/archive/ht2016/1pp/lecture4.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture4.pdf>`
+
+.. _designrecapquiz:
+
+Design recap quiz
+~~~~~~~~~~~~~~~~~
+
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/design-recap-quiz.pdf>`
+
+Kahoots:
+  - `Part 1 <https://goo.gl/NsKEmt>`_
+  - `Part 2 <https://goo.gl/syOy36>`_
 
 .. _lecture5:
 
@@ -174,6 +186,7 @@ Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after
   - :download:`one per page <../_static/archive/ht2016/1pp/lecture11.pdf>`
 
 .. _lecture12:
+
 Lecture 12, XML and NoSQL
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 

@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-11-14
+  Uploaded slides and SQL for lecture 5
+
 2016-11-09
   Uploaded slides and kahoot-links for the design recap quiz
 

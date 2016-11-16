@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-11-16
+  Corrected the solutions for exercise session 1 (thanks to Selpi)
+
 2016-11-15
   Uploaded slides and SQL for lecture 6
 

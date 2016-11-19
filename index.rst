@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-11-19
+  Added the doodles for lab/exercise sessions.
+
 2016-11-16
   Corrected the solutions for exercise session 1 (thanks to Selpi)
 
@@ -57,6 +60,7 @@ Information
    :maxdepth: 1
 
    slides/index
+   doodles/index
    tutorials/index
    lab/index
    course_book

@@ -142,10 +142,13 @@ Lecture 7, SQL 3, Relational Algebra
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: ???
+  - |book2e|: 6.1-6.5, 5.1-5.2, 7.1-7.2, 8.1-8.2
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
-  - :download:`one per page <../_static/archive/ht2016/1pp/lecture7.pdf>`
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture7.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture7.pdf>`
+
+SQL:
+  - :download:`lecture7.sql <../_static/archive/ht2016/data/lecture7.sql>`
 
 .. _lecture8:
 

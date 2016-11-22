@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-11-22
+  Uploaded slides and SQL for lecture 7
+
 2016-11-19
   Added the doodles for lab/exercise sessions.
 

@@ -156,10 +156,16 @@ Lecture 8, SQL 4, Assertions, Triggers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: ???
+  - |book2e|: 6.1-6.5, 5.1-5.2, 7.1-7.2, 8.1-8.2
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
-  - :download:`one per page <../_static/archive/ht2016/1pp/lecture8.pdf>`
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture8.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture8.pdf>`
+
+SQL:
+  - :download:`lecture8.sql <../_static/archive/ht2016/data/lecture8.sql>`
+
+Kahoot:
+  - `Part 1 <https://goo.gl/KDcvsY>`_
 
 .. _lecture9:
 

@@ -169,8 +169,8 @@ Kahoot:
 
 .. _lecture9:
 
-Lecture 9, Embedded SQL
-~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 9, JDBC, SQL Injection, Authorization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
   - |book2e|: ???
@@ -180,8 +180,8 @@ Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after
 
 .. _lecture10:
 
-Lecture 10, Transactions, authorization
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 10, Transactions
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
   - |book2e|: ???

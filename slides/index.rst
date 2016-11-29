@@ -173,10 +173,10 @@ Lecture 9, JDBC, SQL Injection, Authorization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: ???
+  - |book2e|: 9.5-9.6, 10.1
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
-  - :download:`one per page <../_static/archive/ht2016/1pp/lecture9.pdf>`
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture9.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture9.pdf>`
 
 .. _lecture10:
 

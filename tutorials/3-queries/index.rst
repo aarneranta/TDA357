@@ -269,5 +269,5 @@ Question 5
 
 
 .. note:: You can download the data used during the tutorial
-   :download:`airtrafic.sql` as well as the :download:`slides <slides.pdf>` and
+   :download:`Exercise1.zip`, :download:`Exercise2.zip` as well as the :download:`slides <slides.pdf>` and
    :download:`handout <handout.pdf>`

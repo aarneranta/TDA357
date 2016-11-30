@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-11-30
+  Uploaded slides for lecture 10.
+
 2016-11-29
   Uploaded slides for lecture 9.
 

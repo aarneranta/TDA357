@@ -184,10 +184,10 @@ Lecture 10, Transactions
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: ???
+  - |book2e|: 6.6, 18.1
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
-  - :download:`one per page <../_static/archive/ht2016/1pp/lecture10.pdf>`
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture10.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture10.pdf>`
 
 .. _lecture11:
 

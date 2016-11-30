@@ -1,0 +1,306 @@
+﻿Tutorial 3: 25 November 2016
+
+Exercise 1 - Airtraffic domain
+
+In the questions that follow, we need information about departure and arrival times. We assume the following relations have been implemented as tables in SQL:
+
+Airports(_code_,city)
+FlightCodes(_code_, airlineName)
+Flights(departureAirport, destinationAirport, departureTime, arrivalTime, _code_)
+  departureAirport → Airports.code
+  destinationAirport → Airports.code
+  code → FlightCodes.code
+
+The listed flight code is the prime flight (i.e. the one used by the operating airline). For simplicity, we assume that departure and arrival are integers denoting full hours, all in the same time zone, and that 0 ≤ departure < arrival < 24.
+
+
+-- Note that the schema above is not exactly the same as in the Tutorial 3 paper (attribute names are a bit different to fit with the data below).
+-- airtraffic is the name of the schema used below.
+-- So, if the schema is fixed to airtraffic, we can refer to TABLE etc. just by its name without "airtraffic.".
+-- However, if you haven't set/fixed the schema, you would have to write the schema name everytime you are referring to a table etc.
+
+
+========================================================================================
+
+CREATE SCHEMA airtraffic;
+
+DROP TABLE IF EXISTS airtraffic.Airports CASCADE;
+DROP TABLE IF EXISTS airtraffic.FlightCodes CASCADE;
+DROP TABLE IF EXISTS airtraffic.Flights CASCADE;
+
+CREATE TABLE airtraffic.Airports(
+  code TEXT PRIMARY KEY,
+  city TEXT NOT NULL
+);
+
+CREATE TABLE airtraffic.FlightCodes (
+  code TEXT PRIMARY KEY,
+  airlineName TEXT NOT NULL
+);
+
+-- from the solution paper - but I think it is missing the constraint arrivalTime > departureTime
+CREATE TABLE airtraffic.Flights (
+  departureAirport TEXT,
+  FOREIGN KEY (departureAirport) REFERENCES airtraffic.Airports(code),
+  destinationAirport TEXT REFERENCES airtraffic.Airports(code),
+  departureTime INT CHECK (departureTime >=0 AND departureTime < 24),
+  arrivalTime INT CHECK (arrivalTime >=0 AND arrivalTime < 24),
+  Fcode TEXT REFERENCES airtraffic.FlightCodes(code)
+);
+
+-- I use this one instead.
+CREATE TABLE airtraffic.Flights (
+  departureAirport TEXT REFERENCES airtraffic.Airports(code),
+  destinationAirport TEXT REFERENCES airtraffic.Airports(code),
+  departureTime INT CHECK (departureTime >=0 AND departureTime < 24),
+  arrivalTime INT CHECK (arrivalTime >=0 AND arrivalTime < 24 and arrivalTime > departureTime),
+  code TEXT REFERENCES airtraffic.FlightCodes(code),
+  PRIMARY KEY (code)
+);
+
+-- Insert data here...
+INSERT INTO airtraffic.Airports(code, city) VALUES ('ABZ', 'Aberdeen');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('AMS', 'Amsterdam');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('ARN', 'Stockholm');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('CDG', 'Paris');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('CPH', 'Copenhagen');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('DEL', 'New Delhi');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('FRA', 'Frankfurt');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('GOT', 'Gothenburg');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('MUC', 'Munich');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('NGO', 'Nagoya');
+INSERT INTO airtraffic.Airports(code, city) VALUES ('PAR', 'Paris');
+
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('SK49732', 'Scandinavian Airlines System');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','CPH',13,14,'SK49732');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('SK49733', 'Scandinavian Airlines System');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','ARN',13,14,'SK49733');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('SK49734', 'Scandinavian Airlines System');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','ARN',15,16,'SK49734');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('SK49735', 'Scandinavian Airlines System');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','CPH',14,15,'SK49735');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('SK49736', 'Scandinavian Airlines System');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CPH','FRA',15,17,'SK49736');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('SK49738', 'Scandinavian Airlines System');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CPH','ABZ',16,18,'SK49738');
+
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('LH38002', 'Lufthansa Cargo');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('FRA','MUC',15,16,'LH38002');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('LH38003', 'Lufthansa Cargo');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('FRA','GOT',15,17,'LH38003');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('LH38004', 'Lufthansa Cargo');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','FRA',18,20,'LH38004');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('LH38005', 'Lufthansa Cargo');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','MUC',18,20,'LH38005');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('LH38007', 'Lufthansa Cargo');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('FRA','CPH',18,19,'LH38007');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('LH38008', 'Lufthansa Cargo');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('FRA','ARN',19,21,'LH38008');
+
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9009', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CDG','GOT',5,7,'AF9009');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9010', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CDG','GOT',8,10,'AF9010');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9011', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','CDG',8,10,'AF9011');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9012', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','CDG',11,13,'AF9012');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9013', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CDG','AMS',10,11,'AF9013');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9014', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CDG','AMS',15,16,'AF9014');
+
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36197', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','AMS',17,19,'KL36197');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36198', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('ABZ','AMS',10,12,'KL36198');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36199', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('ABZ','AMS',13,15,'KL36199');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36200', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('ABZ','AMS',17,19,'KL36200');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36201', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('AMS','ABZ',13,15,'KL36201');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36202', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('AMS','ABZ',16,18,'KL36202');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36203', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('AMS','ABZ',18,20,'KL36203');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36206', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('GOT','AMS',10,12,'KL36206');
+
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('SK49737', 'Scandinavian Airlines System');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CPH','NGO',15,23,'SK49737');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('LH38006', 'Lufthansa Cargo');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('FRA','NGO',1,11,'LH38006');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9015', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CDG','DEL',15,21,'AF9015');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('AF9016', 'Air France');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('CDG','NGO',15,23,'AF9016');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36204', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('AMS','NGO',14,22,'KL36204');
+INSERT INTO airtraffic.FlightCodes(code, airlineName) VALUES ('KL36205', 'KLM Royal Dutch Airlines');
+INSERT INTO airtraffic.Flights(departureAirport, destinationAirport, departureTime, arrivalTime, code)VALUES ('AMS','DEL',1,9,'KL36205');
+
+============================================================================================================
+
+Question 1
+Write an SQL query that finds all airports that have departures or arrivals (or both) of flights operated by Lufthansa or SAS (or both).
+
+SELECT distinct airport
+FROM (
+  (SELECT destinationAirport as airport, airlineName
+   FROM airtraffic.Flights JOIN airtraffic.FlightCodes ON airtraffic.Flights.code = airtraffic.FlightCodes.code)
+  UNION
+  (SELECT departureAirport as airport, airlineName
+   FROM airtraffic.Flights JOIN airtraffic.FlightCodes ON airtraffic.Flights.code = airtraffic.FlightCodes.code)
+) as destDepartAirports
+WHERE destDepartAirports.airlineName like 'Lufthansa%'
+   OR destDepartAirports.airlineName like 'Scandinavian%'
+ORDER BY airport;
+
+Gives 7 rows results with the above data.
+airport
+ABZ
+ARN
+CPH
+FRA
+GOT
+MUC
+NGO
+
+
+Can also use the following query:
+SELECT distinct airport
+FROM ( (SELECT distinct(departureAirport)
+        FROM airtraffic.Flights, (select code as fcode from airtraffic.FlightCodes where airlineName like 'Lufthansa%' or airlineName like 'Scandinavian%') S
+        WHERE code = fcode)
+       UNION
+       (SELECT distinct(destinationAirport)
+        FROM airtraffic.Flights, (select code as fcode from airtraffic.FlightCodes where airlineName like 'Lufthansa%' or airlineName like 'Scandinavian%') S
+        WHERE code = fcode)
+) as airport;
+  
+airport
+ABZ
+ARN
+CPH
+FRA
+GOT
+MUC
+NGO
+
+========================================================================================
+
+Question 2
+Write an SQL query that shows the names of all cities together with the number of flights that depart from them, and sorts them by the number of flights in descending order (i.e., the city with the largest number of departures first).
+
+SELECT city, count(f.code) as noofflights
+FROM airtraffic.Airports a, airtraffic.Flights f
+WHERE a.code = f.departureAirport
+GROUP BY city
+ORDER BY noofflights desc;
+
+city		noofflights
+Gothenburg	10
+Paris		6
+Frankfurt	5
+Amsterdam	5
+Copenhagen	3
+Aberdeen	3
+
+
+========================================================================================
+
+Question 3
+Write a view that lists all connections from any city X to any city Y involving 1 or 2 legs (i.e., separate flights between two cities: if you fly from Gothenburg to Paris with a change in Frankfurt, the connection has two legs)
+
+The query must return a table with the following information (and nothing else):
+•	the departure city X and destination city Y
+•	the departure time from X and the arrival time in Y
+•	the number of legs
+•	the total time from departure in X to arrival in Y
+•	the total time spent in the air
+
+A change is possible if and only if
+1.	it happens at the same airport,
+2.	the changing time is at least 1 hour, and
+3.	the connecting flight is on the same day.
+
+We want a table with the following columns:
+origin, destination, departureTime, arrivalTime, legs, TotTravelTimes, TotTimeInAir
+
+-- In the following view, we first find all direct flights and then find all 2-legs flights (that have connecting flight 1h after arrival of the first flight)
+-- ORDER BY is not asked, but it would make it easier for us to look at the result.
+-- Since arrival time > departure time and that there is no date information, this means each flight departs and arrives on the same day and all flights are operated every day.
+
+CREATe VIEW airtraffic.connectedCities AS
+SELECT A1.city as origin,
+       A2.city as destination,
+       departureTime, arrivalTime, 1 as legs,
+       arrivalTime - departureTime as totalTravelTime,
+       arrivalTime - departureTime as totalTimeInAir
+  FROM airtraffic.Flights, airtraffic.Airports as A1, airtraffic.Airports as A2
+  WHERE departureAirport = A1.code
+    AND destinationAirport = A2.code
+UNION
+SELECT A1.city as origin,
+       A2.city as destination,
+       F1.departureTime, F2.arrivalTime, 2 as legs,
+       F2.arrivalTime - F1.departureTime as totalTravelTime,
+       F1.arrivalTime - F1.departureTime
+        + (F2.arrivalTime - F2.departureTime)
+        as totalTimeInAir
+  FROM airtraffic.Flights as F1, airtraffic.Flights as F2,
+       airtraffic.Airports as A1, airtraffic.Airports as A2
+  WHERE F1.departureAirport = A1.code
+    AND F2.destinationAirport = A2.code
+    AND F1.destinationAirport = F2.departureAirport
+    AND F2.departureTime > F1.arrivalTime
+ORDER BY origin, destination, departureTime, arrivalTime, legs;
+
+-- We can also use the following. 
+-- Find all the needed data first (those that are not needed to be calculated or in other words already available in the tables), which is in this case list "CityFlights".
+-- Then compute TotalTravelTime and totalTimeInAir
+-- ORDER BY is not asked, but it would make it easier for us to look at the result (I added it here).
+-- This is very similar to the sample solution of VT2015; but with departureTime and arrivalTime which were missing in the sample solution
+
+CREATE VIEW airtraffic.Connections AS
+WITH
+  CityFlights AS
+  (SELECT departureAirport, D.city AS departureCity, destinationAirport,
+		A.city AS destinationCity, departureTime, arrivalTime
+   FROM airtraffic.Flights, airtraffic.Airports AS D, airtraffic.Airports AS A
+   WHERE D.code = departureAirport AND A.code = destinationAirport)
+
+  SELECT origin, destination, departureTime, arrivalTime, legs, totalTravelTime, totalTimeInAir
+  FROM
+  ((SELECT departureCity AS origin, destinationCity AS destination,
+		   departureTime, arrivalTime, 1 AS legs,
+		   arrivalTime - departureTime AS totalTravelTime,
+           arrivalTime - departureTime AS totalTimeInAir           
+    FROM CityFlights)
+  UNION
+   (SELECT F1.departureCity AS origin, F2.destinationCity AS destination,
+           F1.departureTime, F2.arrivalTime, 2 AS legs,
+		   F2.arrivalTime - F1.departureTime AS totalTravelTime,
+           (F2.arrivalTime - F1.departureTime) - (F2.departureTime - F1.arrivalTime) as totalTimeInAir
+    FROM CityFlights F1 JOIN CityFlights F2 ON F1.destinationAirport = F2.departureAirport
+    WHERE F1.arrivalTime < F2.departureTime)
+  ) AS F 
+  ORDER BY origin, destination, departureTime, arrivalTime, legs;
+
+========================================================================================
+
+Question 4
+Express the query of question 1 by a relational algebra expression.
+
+Not shown here (see sample solution provided already in the tutorial 3 paper.
+
+========================================================================================
+
+Question 5
+Translate an algebra expression to SQL
+
+SELECT First.departure, Second.arrival
+FROM Flights as First JOIN Flights as Second
+ON First.destination = Second.origin;
+

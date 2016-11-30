@@ -179,6 +179,9 @@ Solution
 .. note:: Solution to the first exercise.  You can find a slightly different
    solution in :download:`the 2015 exam solution <../../exam/VT2015_soln.pdf>`.
 
+.. note:: Solution to the first exercise as solved in 
+   :download:`the exercise session of 2016/11/25 <Tutorial3_airTraffic_20161128.txt>`.
+
 Exercise 1
 ~~~~~~~~~~
 

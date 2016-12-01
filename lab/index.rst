@@ -586,7 +586,7 @@ privileges, even though we cannot get the system to enforce them automatically.
        to, and which has at least two students in the queue.  Register again to
        the same course and show that the student gets the correct (last)
        position in the waiting list.
-    #. Unregister, unregister again and re-register the same student for the
+    #. Register, unregister and re-register the same student for the
        same restricted course, and show that the student is first removed and
        then ends up in the same position as before (last).
     #. Finally, unregister a student from an *overfull* course, i.e. one with

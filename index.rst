@@ -23,8 +23,12 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-12-01
+  Minor lab assignment fix
+
 2016-11-30
   Uploaded slides for lecture 10, updated solution for tutorial 3 (SQL queries).
+  Uploaded .sql files for SQL exercise session
 
 2016-11-29
   Uploaded slides for lecture 9.

@@ -23,6 +23,9 @@ University of Gothenburg course code:
 News
 ~~~~
 
+2016-12-02
+  Adjusted listing of chapters for each of the lectures
+
 2016-12-01
   Minor lab assignment fix
 

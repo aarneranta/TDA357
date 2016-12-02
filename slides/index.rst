@@ -114,7 +114,7 @@ Lecture 5, SQL 1, Relational Algebra
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: 6.1-6.5, 5.1-5.2, 7.1-7.2
+  - |book2e|: 2.3-2.5, 6.1-6.5, 5.1-5.2, 7.1-7.2, 7.4-7.5, 8.1-8.2, 9.4
 
 Slides:
   - :download:`one per page <../_static/archive/ht2016/1pp/lecture5.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture5.pdf>`
@@ -128,7 +128,7 @@ Lecture 6, SQL 2, Relational Algebra, Views
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: 6.1-6.5, 5.1-5.2, 7.1-7.2, 8.1-8.2
+  - |book2e|: 2.3-2.5, 6.1-6.5, 5.1-5.2, 7.1-7.2, 7.4-7.5, 8.1-8.2, 9.4
 
 Slides:
   - :download:`one per page <../_static/archive/ht2016/1pp/lecture6.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture6.pdf>`
@@ -142,7 +142,7 @@ Lecture 7, SQL 3, Relational Algebra
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: 6.1-6.5, 5.1-5.2, 7.1-7.2, 8.1-8.2
+  - |book2e|: 2.3-2.5, 6.1-6.5, 5.1-5.2, 7.1-7.2, 7.4-7.5, 8.1-8.2, 9.4
 
 Slides:
   - :download:`one per page <../_static/archive/ht2016/1pp/lecture7.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture7.pdf>`
@@ -156,7 +156,7 @@ Lecture 8, SQL 4, Assertions, Triggers
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: 6.1-6.5, 5.1-5.2, 7.1-7.2, 8.1-8.2
+  - |book2e|: 2.3-2.5, 6.1-6.5, 5.1-5.2, 7.1-7.2, 7.4-7.5, 8.1-8.2, 9.4
 
 Slides:
   - :download:`one per page <../_static/archive/ht2016/1pp/lecture8.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture8.pdf>`
@@ -195,7 +195,7 @@ Lecture 11, Indexes, non-natural keys, denormalization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: ???
+  - |book2e|: (8.3-8.4, 14?)
 
 Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
   - :download:`one per page <../_static/archive/ht2016/1pp/lecture11.pdf>`

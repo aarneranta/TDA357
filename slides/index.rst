@@ -45,6 +45,7 @@ November 29   :ref:`lecture9`
 November 30   :ref:`lecture10`
 December 6    :ref:`lecture11`
 December 7    :ref:`lecture12`
+December 13   :ref:`lecture13`
 ===========   ================
 
 
@@ -214,12 +215,8 @@ Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after
 
 .. _lecture13:
 
-.. Lecture 13, Databases at Spotify (guest lecture by Oscar Söderlund, Spotify)
-.. ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Lecture 13, Databases at Recorded Future (guest lecture by Jan Sparud, Recorded Future)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _lecture14:
-
-.. Lecture 14, Exam training
-.. ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. |book2e| replace:: Database Systems: The Complete Book, second edition

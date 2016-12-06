@@ -196,10 +196,10 @@ Lecture 11, Indexes, non-natural keys, denormalization
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: (8.3-8.4, 14?)
+  - |book2e|: 8.3-8.4, 14.1
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
-  - :download:`one per page <../_static/archive/ht2016/1pp/lecture11.pdf>`
+Slides:
+  - :download:`one per page <../_static/archive/ht2016/1pp/lecture11.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture11.pdf>`
 
 .. _lecture12:
 

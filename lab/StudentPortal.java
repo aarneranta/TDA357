@@ -42,10 +42,14 @@ public class StudentPortal
             String student = args[0]; // This is the identifier for the student.
 
             Console console = System.console();
+	    // In Eclipse. System.console() returns null due to a bug (https://bugs.eclipse.org/bugs/show_bug.cgi?id=122429)
+	    // In that case, use the following line instead:
+	    // BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
             usage();
             System.out.println("Welcome!");
             while(true) {
-                String mode = console.readLine("? > ");
+	        System.out.print("? > ");
+                String mode = console.readLine();
                 String[] cmd = mode.split(" +");
                 cmd[0] = cmd[0].toLowerCase();
                 if ("information".startsWith(cmd[0]) && cmd.length == 1) {

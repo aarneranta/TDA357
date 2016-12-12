@@ -207,11 +207,11 @@ Lecture 12, XML and NoSQL
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Book sections
-  - |book2e|: ???
+  - |book2e|: 11, 12.1-12.2
 
-Preliminary Slides from VT2014 (actual slides from HT2016 will be uploaded after the lecture):
-  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture12a.pdf>`
-  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture12b.pdf>`
+Slides:
+  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture13.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture13.pdf>`
+  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture14.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture14.pdf>`
 
 .. _lecture13:
 

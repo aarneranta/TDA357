@@ -210,8 +210,8 @@ Book sections
   - |book2e|: 11, 12.1-12.2
 
 Slides:
-  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture13.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture13.pdf>`
-  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture14.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture14.pdf>`
+  - Part 1: :download:`one per page <../_static/archive/ht2016/1pp/lecture13a.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture13a.pdf>`
+  - Part 2: :download:`one per page <../_static/archive/ht2016/1pp/lecture13b.pdf>`, :download:`six per page <../_static/archive/ht2016/6pp/lecture13b.pdf>`
 
 .. _lecture13:
 

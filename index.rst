@@ -22,6 +22,10 @@ University of Gothenburg course code:
 
 News
 ~~~~
+
+2017-01-11
+  Uploaded exam paper for :download:`Exam (10 Januari 2017) <exam/HT2016.pdf>`
+
 2016-12-12
   Uploaded slides for lecture 12.
 

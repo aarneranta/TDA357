@@ -9,6 +9,11 @@ Help material:
     If you bring a sheet, it must be handed in with your answers to the
     exam questions.
 
+HT2016 Exam Papers
+------------------
+
+- :download:`Exam (10 Januari 2017) <HT2016.pdf>`, solutions coming soon
+
 VT2016 Exam Papers
 ------------------
 

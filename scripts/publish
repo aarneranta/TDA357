@@ -1,13 +1,13 @@
 #!/bin/sh -eux
 
-USERNAME=acker
+USERNAME=aarne
 RHOST=$USERNAME@remote12.chalmers.se
-RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2016/course/TDA357/HT2016/
+RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2017/course/TDA357/VT2017/
 
-make clean html
-make -C _tex
+#make clean html
+#make -C _tex
 rsync -priv --delete --checksum $* \
-  _build/html/ \
+  _www/ \
   ${RHOST}:${RPATH}
 
 ssh ${RHOST} "find $RPATH -type d -exec chmod u=rwx,g=rwxs,o=rx {} \; && find $RPATH -type f -exec chmod u=rwx,g=rwx,o=rx {} \; && chown -R $USERNAME:edu2009 $RPATH"

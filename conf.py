@@ -273,3 +273,9 @@ latex_elements = {
 
 rst_prolog = """
 """
+
+def setup(app):
+    import six
+    print('Six version: %s' % six.__version__)
+
+

@@ -1,0 +1,207 @@
+Databases
+Course codes: Chalmers TDA357, GU DIT620
+Spring Term 2017
+
+%!target:html
+%!Encoding:utf8
+
+''<font size="-2">''
+==Links==
+
+- Google group:
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
+- Lecture notes: http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/notes/db-notes.pdf
+- TimeEdit schema: https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html
+- Official URL of this page: http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/
+- Last term's course page: http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/
+  - in particular, slides covering most of the lectures
+
+
+
+==News and changes==
+
+- January 16: Simplified formatting and some more content
+- January 11: First version of Spring Term 2017 web page
+
+''</font>''
+
+
+=Schedule=
+
+Material:
+Notes = [course notes notes/db-notes.pdf],
+Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-Systems-Pearson-New-International-Edition-The-Complete-Book-2E/9781292024479.page]
+
+|| Date  | Title | Material |
+| January 18     | Lecture 1, Introduction | Notes 1, Book
+| January 19	 | Lecture 2, Data modelling with relations | Notes 2, Book
+| January 23	 | Lecture 3, Entity-Relationship diagrams | Notes 3, Book
+| January 25	 | Exercise 1, Entity-Relationship diagrams | Questions
+| January 26	 | Lecture 4, Functional dependencies and normal forms | Notes 4, Book
+| January 30	 | Lecture 5, SQL construction and queries 1 | Notes 5, Book
+| February 1	 | Exercise 2, Functional dependencies | Questions
+| February 1	 | LAB 1 DEADLINE | Lab PM 
+| February 2	 | Lecture 6, SQL construction and queries 2  | Notes 5, Book
+| February 6	 | Lecture 7, SQL table modification and triggers  | Notes 6, Book
+| February 13	 | Lecture 8, SQL in software applications (JDBC, SQL injection)  | Notes 8, Book
+| February 15	 | Exercise 3, SQL | Questions
+| February 16	 | Lecture 9, Relational algebra and query compilation  | Notes 7, Book
+| February 19	 | LAB 2 DEADLINE  | Lab PM
+| February 20	 | Lecture 10, Remaining SQL topics: transaction, authorization, indexes  | Notes 9, Book
+| February 22	 | Exercise 4, | Questions
+| February 23	 | Lecture 11, Alternative data models  | Notes 10, Book
+| February 27	 | Lecture 12, Industrial guest lecture: Oscar Söderlund, Spotify  | Cassandra
+| March 1	 | Exercise 5, | Questions
+| March 2	 | Lecture 13, recap and exam preparation  | Notes, Book
+| March 5	 | LAB 3 DEADLINE | Lab PM
+| March 8	 | Exercise 6, | Questions
+
+
+The official course schema is in [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
+
+
+
+=Description=
+
+The course covers the basic principles of database systems as seen by users, application programmers and database administrators.
+A laboratory assignment develops these topics as a running example throughout the course.
+These include programming in SQL, as seen by a user querying or modifying an existing database, by a database designer,
+and by an application programmer invoking SQL from a host language.
+Course contents include:
+- Entity-Relationship modelling
+- Functional Dependencies and Normalisation
+- Database querying and manipulation through SQL
+- Interfacing to a database from a host language (Java/JDBC)
+- The semi-structured model, XML
+
+
+The course is thus a typical first course in database systems, and occupies a traditional place in the curriculum.
+
+The full description with learning outcomes is available in the
+[student portal https://student.portal.chalmers.se/sv/chalmersstudier/minkursinformation/Sidor/SokKurs.aspx?course_id=24682&parsergrp=3]
+
+
+=Teachers=
+
+- [Aarne Ranta http://www.cse.chalmers.se/~aarne/], course responsible.
+- [Steven Van Acker https://www.chalmers.se/en/Staff/Pages/acker.aspx], Co-Lecturer
+- [Herbert Lange https://www.chalmers.se/sv/personal/Sidor/herbert-lange.aspx]
+- [Markus Aronsson https://www.chalmers.se/sv/personal/Sidor/mararon.aspx]
+- [Per Hallgren https://www.chalmers.se/sv/personal/Sidor/hallgrep.aspx]
+- [Hamid Ebadi Tavallaei https://www.chalmers.se/en/staff/Pages/hamide.aspx]
+- Timon Lapawczyk
+- Juan Gabriel Ricart
+
+
+The fastest way to get an answer is to mail the course's
+Google group
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
+
+
+=Google Group=
+
+If you have any general questions regarding the course, the labs or the exercises, 
+please ask them in our
+Google group
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
+This will reach all teachers and fellow students. 
+If you are not yet member of the group, you have to
+- get a google account (if you don't have it yet)
+- go to
+  ''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
+- request membership in the group
+
+
+=Laboration times and supervision=
+
+See [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
+for times and places.
+
+Course assistants will be in the lab rooms to help.
+
+**Attendance in these classes is optional**.
+Normally, each student should attend **at most one** supervised laboration time each week.
+Since attendance is not compulsory, there may be room for more 
+times. But, if there is lack of room, those who attend their first 
+supervision of the week have priority to get a place and supervisor help.
+
+
+=Assignments=
+
+There are three assignments (a.k.a. "laborations", "labs"), written individually or in pairs. 
+- deadline 1/2: Lab 1: Design
+- deadline 19/2: Lab 2: implementation
+- deadline 5/3: Lab 3: Java application
+
+
+The specification ("lab PM") will appear [here ./lab]
+
+Reporting is done via 
+Fire (link forthcoming)
+Before reporting assignments 1 and 2, you must run your program through a test suite.
+
+**Final deadline is Saturday 13 March** for all returned and corrected labs.
+No labs will be graded after this deadline.
+
+We guarantee two gradings per lab: one for the version submitted before the
+ordinary deadline for that lab, the other for a resubmission before
+the final deadline. If your first submission is after the lab
+deadline, only one grading is guaranteed.
+
+
+=Literature=
+
+The course book is
+
+- Hector Garcia-Molina, Jeffrey D. Ullman, and Jennifer Widom,
+  //Database Systems: The Complete Book, 2/E//,
+  Pearson Education,
+  2008.
+
+
+[Book web page http://catalogue.pearsoned.co.uk/educator/product/Database-Systems-Pearson-New-International-Edition-The-Complete-Book-2E/9781292024479.page]
+
+A new "international edition" was published in summer 2013.
+The chapters relevant to this course are the same, so either version will be OK.
+The book is available at Cremona and at web bookshops.
+
+
+
+
+=Exercises=
+
+There are six exercise sessions.
+Each session is given two or three times; you are supposed to participate at most once at each session.
+
+See [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
+for exact times and places.
+
+The questions are based on [last year's questions http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/tutorials/index.html]
+
+but will be confirmed a week before each class:
+
+
+=Exam=
+
+Written exam, usual grading scales.
+
+Date: 17 March
+
+Time: 8:30 - 12:30
+
+Place: HA, HB, HC
+
+The exam has the same structure as these [old exams exams/ http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/exam/index.html].
+
+
+
+=Software=
+
+PostgreSQL
+https://www.postgresql.org/
+(the main software, used in assignments)
+
+Query Converter
+https://github.com/GrammaticalFramework/gf-contrib/tree/master/query-converter
+(experimental teaching software developed alongside with the course)
+

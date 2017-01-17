@@ -5,25 +5,19 @@ Spring Term 2017
 %!target:html
 %!Encoding:utf8
 
-''<font size="-2">''
-==Links==
+''<center>''
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">GoogleGroup</A>'' | [LectureNotes http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/notes/db-notes.pdf] | [TimeEdit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html] | [Assignment ./lab/] | [Eventbrite https://www.eventbrite.com/e/tda357-databases-lab-sessions-tickets-31257066728] | [LastYear http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/]
 
-- Google group:
-''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
-- Lecture notes: http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/notes/db-notes.pdf
-- TimeEdit schema: https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html
-- Official URL of this page: http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/
-- Last term's course page: http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/
-  - in particular, slides covering most of the lectures
+Official URL of this page: http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/
+''</center>''
 
 
 
-==News and changes==
+===News and changes===
 
+- January 17: More links and schedule items
 - January 16: Simplified formatting and some more content
 - January 11: First version of Spring Term 2017 web page
-
-''</font>''
 
 
 =Schedule=
@@ -32,29 +26,143 @@ Material:
 Notes = [course notes notes/db-notes.pdf],
 Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-Systems-Pearson-New-International-Edition-The-Complete-Book-2E/9781292024479.page]
 
-|| Date  | Title | Material |
-| January 18     | Lecture 1, Introduction | Notes 1, Book
-| January 19	 | Lecture 2, Data modelling with relations | Notes 2, Book
-| January 23	 | Lecture 3, Entity-Relationship diagrams | Notes 3, Book
-| January 25	 | Exercise 1, Entity-Relationship diagrams | Questions
-| January 26	 | Lecture 4, Functional dependencies and normal forms | Notes 4, Book
-| January 30	 | Lecture 5, SQL construction and queries 1 | Notes 5, Book
-| February 1	 | Exercise 2, Functional dependencies | Questions
-| February 1	 | LAB 1 DEADLINE | Lab PM 
-| February 2	 | Lecture 6, SQL construction and queries 2  | Notes 5, Book
-| February 6	 | Lecture 7, SQL table modification and triggers  | Notes 6, Book
-| February 13	 | Lecture 8, SQL in software applications (JDBC, SQL injection)  | Notes 8, Book
-| February 15	 | Exercise 3, SQL | Questions
-| February 16	 | Lecture 9, Relational algebra and query compilation  | Notes 7, Book
-| February 19	 | LAB 2 DEADLINE  | Lab PM
-| February 20	 | Lecture 10, Remaining SQL topics: transaction, authorization, indexes  | Notes 9, Book
-| February 22	 | Exercise 4, | Questions
-| February 23	 | Lecture 11, Alternative data models  | Notes 10, Book
-| February 27	 | Lecture 12, Industrial guest lecture: Oscar Söderlund, Spotify  | Cassandra
-| March 1	 | Exercise 5, | Questions
-| March 2	 | Lecture 13, recap and exam preparation  | Notes, Book
-| March 5	 | LAB 3 DEADLINE | Lab PM
-| March 8	 | Exercise 6, | Questions
+'''
+
+<TABLE BORDER="1" CELLPADDING="4">
+<TR style="background-color: cyan">
+<TH>Date</TH>
+<TH>Title</TH>
+<TH>Material</TH>
+</TR>
+<TR>
+<TD>18/1 Wed</TD>
+<TD>Lecture 1, Introduction</TD>
+<TD>Notes 1, Book</TD>
+</TR>
+<TR>
+<TD>19/1 Thu</TD>
+<TD>Lecture 2, Data modelling with relations</TD>
+<TD>Notes 2, Book</TD>
+</TR>
+<TR style="background-color: orange">
+<TD>22/1 Sun</TD>
+<TD>LAB 0 DEADLINE</TD>
+<TD>group registration</TD>
+</TR>
+<TR>
+<TD>23/1 Mon</TD>
+<TD>Lecture 3, Entity-Relationship diagrams</TD>
+<TD>Notes 3, Book</TD>
+</TR>
+<TR style="background-color: yellow">
+<TD>25/1 Wed</TD>
+<TD>Exercise 1, Entity-Relationship diagrams</TD>
+<TD>Questions</TD>
+</TR>
+<TR>
+<TD>26/1 Thu</TD>
+<TD>Lecture 4, Functional dependencies and normal forms</TD>
+<TD>Notes 4, Book</TD>
+</TR>
+<TR>
+<TD>30/1 Mon</TD>
+<TD>Lecture 5, SQL construction and queries 1</TD>
+<TD>Notes 5, Book</TD>
+</TR>
+<TR style="background-color: yellow">
+<TD>1/2 Wed</TD>
+<TD>Exercise 2, Functional dependencies, SQL</TD>
+<TD>Questions</TD>
+</TR>
+<TR>
+<TD>2/2 Thu</TD>
+<TD>Lecture 6, SQL construction and queries 2</TD>
+<TD>Notes 5, Book</TD>
+</TR>
+<TR style="background-color: orange">
+<TD>5/2 Sun</TD>
+<TD>LAB 1 DEADLINE</TD>
+<TD>Lab PM</TD>
+</TR>
+<TR>
+<TD>6/2 Mon</TD>
+<TD>Lecture 7, SQL table modification and triggers</TD>
+<TD>Notes 6, Book</TD>
+</TR>
+<TR>
+<TD>13/2 Mon</TD>
+<TD>Lecture 8, SQL in software applications (JDBC, SQL injection)</TD>
+<TD>Notes 8, Book</TD>
+</TR>
+<TR style="background-color: yellow">
+<TD>15/2 Wed</TD>
+<TD>Exercise 3, More SQL</TD>
+<TD>Questions</TD>
+</TR>
+<TR>
+<TD>16/2 Thu</TD>
+<TD>Lecture 9, Relational algebra and query compilation</TD>
+<TD>Notes 7, Book</TD>
+</TR>
+<TR style="background-color: orange">
+<TD>19/2 Sun</TD>
+<TD>LAB 2 DEADLINE</TD>
+<TD>Lab PM</TD>
+</TR>
+<TR>
+<TD>20/2 Mon</TD>
+<TD>Lecture 10, Remaining SQL topics: transaction, authorization, indexes</TD>
+<TD>Notes 9, Book</TD>
+</TR>
+<TR style="background-color: yellow">
+<TD>22/2 Wed</TD>
+<TD>Exercise 4, JDBC</TD>
+<TD>Questions</TD>
+</TR>
+<TR>
+<TD>23/2 Thu</TD>
+<TD>Lecture 11, Alternative data models</TD>
+<TD>Notes 10, Book</TD>
+</TR>
+<TR>
+<TD>27/2 Mon</TD>
+<TD>Lecture 12, Industrial guest lecture: Oscar Söderlund, Spotify</TD>
+<TD>Cassandra</TD>
+</TR>
+<TR style="background-color: yellow">
+<TD>1/3 Wed</TD>
+<TD>Exercise 5, Transactions etc</TD>
+<TD>Questions</TD>
+</TR>
+<TR>
+<TD>2/3 Thu</TD>
+<TD>Lecture 13, recap and exam preparation</TD>
+<TD>Notes, Book</TD>
+</TR>
+<TR style="background-color: orange">
+<TD>5/3 Sun</TD>
+<TD>LAB 3 DEADLINE</TD>
+<TD>Lab PM</TD>
+</TR>
+<TR style="background-color: yellow">
+<TD>8/3 Wed</TD>
+<TD>Exercise 6, XML</TD>
+<TD>Questions</TD>
+</TR>
+<TR style="background-color: orange">
+<TD>12/3 Sun</TD>
+<TD>LAB RESUBMISSION DEADLINE</TD>
+<TD>Lab PM</TD>
+</TR>
+<TR style="background-color: red">
+<TD>17/3 Fri</TD>
+<TD>Exam</TD>
+<TD>old exams</TD>
+</TR>
+</TABLE>
+
+
+'''
 
 
 The official course schema is in [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
@@ -117,18 +225,20 @@ If you are not yet member of the group, you have to
 See [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
 for times and places.
 
+You should register in the lab session by using this link to
+[Eventbrite https://www.eventbrite.com/e/tda357-databases-lab-sessions-tickets-31257066728]
+
 Course assistants will be in the lab rooms to help.
 
 **Attendance in these classes is optional**.
 Normally, each student should attend **at most one** supervised laboration time each week.
-Since attendance is not compulsory, there may be room for more 
-times. But, if there is lack of room, those who attend their first 
-supervision of the week have priority to get a place and supervisor help.
 
 
 =Assignments=
 
-There are three assignments (a.k.a. "laborations", "labs"), written individually or in pairs. 
+There are three assignments (a.k.a. "laborations", "labs"), written individually or in pairs.
+In addition, there is a "Lab 0", which consists of just registering the group.
+- deadline 22/1: Lab 0: PostgreSQL and group registration
 - deadline 1/2: Lab 1: Design
 - deadline 19/2: Lab 2: implementation
 - deadline 5/3: Lab 3: Java application
@@ -140,8 +250,8 @@ Reporting is done via
 Fire (link forthcoming)
 Before reporting assignments 1 and 2, you must run your program through a test suite.
 
-**Final deadline is Saturday 13 March** for all returned and corrected labs.
-No labs will be graded after this deadline.
+**Final deadline is Sunday 12 March** for all returned and corrected labs.
+No labs will be graded if sent after this deadline.
 
 We guarantee two gradings per lab: one for the version submitted before the
 ordinary deadline for that lab, the other for a resubmission before
@@ -177,8 +287,7 @@ See [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ0
 for exact times and places.
 
 The questions are based on [last year's questions http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/tutorials/index.html]
-
-but will be confirmed a week before each class:
+but will be confirmed a week before each class.
 
 
 =Exam=

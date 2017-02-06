@@ -15,6 +15,11 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2017/course/TDA35
 
 ===News and changes===
 
+- February 6: Lab 2 in [Lab PM ./lab/dblab.pdf] now. Almost final version; some things may change. 
+- January 30: Query Converter binaries: [linux ./_downloads/qconv-linux.gz] and [mac ./_downloads/qconv-mac.gz].
+  For full functionality, you also need [graphviz http://www.graphviz.org/] (to show E-R diagrams) and
+  [latex https://www.latex-project.org/] (to show relational algebra)
+- January 26: Lab 1 in [Lab PM ./lab/dblab.pdf] considered final now (no changes since January 23)
 - January 23: [Lab PM ./lab/dblab.pdf] (assignment specification) published (preliminary version)
 - January 18: Fire is up and running! https://databases-lp3-17.frs.cse.chalmers.se/
 - January 17: More links and schedule items
@@ -84,7 +89,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: orange">
 <TD>5/2 Sun</TD>
 <TD>LAB 1 DEADLINE</TD>
-<TD>[Lab PM ./lab/dblab.pdf]</TD>
+<TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
 <TR>
 <TD>6/2 Mon</TD>
@@ -93,7 +98,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 <TR>
 <TD>13/2 Mon</TD>
-<TD>Lecture 8, SQL in software applications (JDBC, SQL injection)</TD>
+<TD>Lecture 8, (by Steven) SQL in software applications (JDBC, SQL injection)</TD>
 <TD>Notes 8, Book 9</TD>
 </TR>
 <TR style="background-color: yellow">
@@ -109,11 +114,11 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: orange">
 <TD>19/2 Sun</TD>
 <TD>LAB 2 DEADLINE</TD>
-<TD>[Lab PM ./lab/dblab.pdf]</TD>
+<TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
 <TR>
 <TD>20/2 Mon</TD>
-<TD>Lecture 10, Remaining SQL topics: transaction, authorization, indexes</TD>
+<TD>Lecture 10, (by Steven) Remaining SQL topics: transaction, authorization, indexes</TD>
 <TD>Notes 9, Book 6,8,10</TD>
 </TR>
 <TR style="background-color: yellow">
@@ -144,7 +149,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: orange">
 <TD>5/3 Sun</TD>
 <TD>LAB 3 DEADLINE</TD>
-<TD>[Lab PM ./lab/dblab.pdf]</TD>
+<TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
 <TR style="background-color: yellow">
 <TD>8/3 Wed</TD>
@@ -154,7 +159,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: orange">
 <TD>12/3 Sun</TD>
 <TD>LAB RESUBMISSION DEADLINE</TD>
-<TD>[Lab PM ./lab/dblab.pdf]</TD>
+<TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
 <TR style="background-color: red">
 <TD>17/3 Fri</TD>
@@ -326,7 +331,10 @@ PostgreSQL
 https://www.postgresql.org/
 (the main software, used in assignments)
 
-Query Converter
+Query Converter source
 https://github.com/GrammaticalFramework/gf-contrib/tree/master/query-converter
-(experimental teaching software developed alongside with the course)
+(experimental teaching software developed alongside with the course).
+Binaries available for [linux ./_downloads/qconv-linux.gz] and [mac ./_downloads/qconv-mac.gz].
+  For full functionality, you also need [graphviz http://www.graphviz.org/] (to show E-R diagrams) and
+  [latex https://www.latex-project.org/] (to show relational algebra)
 

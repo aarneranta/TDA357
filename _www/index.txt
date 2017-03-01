@@ -168,7 +168,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: red">
 <TD>17/3 Fri</TD>
 <TD>Exam</TD>
-<TD>old exams</TD>
+<TD>old exams and a quiz</TD>
 </TR>
 </TABLE>
 

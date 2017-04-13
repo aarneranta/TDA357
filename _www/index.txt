@@ -15,6 +15,9 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2017/course/TDA35
 
 ===News and changes===
 
+- April 13: Exam review on 20 April at 14-16 in EDIT room 6106
+- March 8: Lab 3 extension to Friday 10 March, final deadline to Wednesday 15 March.
+- March 2: Here you can find the ''<A HREF="https://jdbc.postgresql.org/download.html">JDBC driver</A>'' 
 - February 27: Lab 3 in [Lab PM ./lab/dblab.pdf] now, together with skeleton file [Game.java ./lab/Game.java]
 - February 22: [Exam cheatsheet notes/db-cheatsheet.pdf] published (preliminary version).
 - February 17: Lab 2 extension to Friday 24 February, Lab 3 to Wednesday 8 March.
@@ -108,7 +111,9 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: yellow">
 <TD>15/2 Wed</TD>
 <TD>Exercise 3, Triggers</TD>
-<TD><a href="_downloads/Ex3-questions.html">Questions</a></TD>
+<TD>
+<a href="_downloads/Ex3-questions.html"> Questions</a> <a href="_downloads/ex3/solutions.txt">Solution</a> <a href="_downloads/ex3/exercise1-setup.sql">setup1</a> <a href="_downloads/ex3/exercise2-setup.sql">setup2</a> <a href="_downloads/ex3/exercise3-setup.sql">setup3</a></TD>
+</TD>
 </TR>
 <TR>
 <TD>16/2 Thu</TD>
@@ -128,7 +133,10 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR>
 <TD>23/2 Thu</TD>
 <TD>Lecture 10, (by Steven) Remaining SQL topics: transaction, authorization, indexes</TD>
-<TD>Notes 9, Book 6,8,10</TD>
+<TD>Notes 9, Book 6,8,10,
+<a href="slides/LP3-TDA357-transactions-authorization-indexes-1pp.pdf">slides (1pp)</a>,
+<a href="slides/LP3-TDA357-transactions-authorization-indexes-6pp.pdf">slides (6pp)</a>
+</TD>
 </TR>
 <TR style="background-color: orange">
 <TD>24/2 Fri</TD>
@@ -143,7 +151,8 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: yellow">
 <TD>1/3 Wed</TD>
 <TD>Exercise 5, Transactions etc</TD>
-<TD>Questions</TD>
+<TD><a href="_downloads/transaction.shtml">Questions</a>  <a href="_downloads/solutions5.shtml">Solution</a> <a href="_downloads/Transactions.pdf">Slides</a></TD>
+</TD>
 </TR>
 <TR>
 <TD>2/3 Thu</TD>
@@ -153,15 +162,15 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR style="background-color: yellow">
 <TD>8/3 Wed</TD>
 <TD>Exercise 6, XML</TD>
-<TD>Questions</TD>
+<TD><a href="tutorials/Ex6.pdf">Questions</a> <a href="tutorials/Ex6-incl.-solutions.pdf">Solutions</a></TD>
 </TR>
 <TR style="background-color: orange">
-<TD>8/3 Wed</TD>
+<TD>10/3 Fri</TD>
 <TD>LAB 3 DEADLINE</TD>
 <TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
 <TR style="background-color: orange">
-<TD>12/3 Sun</TD>
+<TD>15/3 Wed</TD>
 <TD>LAB RESUBMISSION DEADLINE</TD>
 <TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
@@ -252,7 +261,7 @@ In addition, there is a "Lab 0", which consists of just registering the group.
 - deadline 22/1: Lab 0: PostgreSQL and group registration
 - deadline 5/2: Lab 1: Design
 - deadline 24/2: Lab 2: implementation
-- deadline 8/3: Lab 3: Java application
+- deadline 10/3: Lab 3: Java application
 
 
 The specification ("lab PM") is [here ./lab/dblab.pdf]
@@ -261,7 +270,7 @@ Reporting is done via
 [Fire https://databases-lp3-17.frs.cse.chalmers.se/]
 Before reporting assignments 1 and 2, you must run your program through a test suite.
 
-**Final deadline is Sunday 12 March** for all returned and corrected labs.
+**Final deadline is Wednesday 15 March** for all returned and corrected labs.
 No labs will be graded if sent after this deadline.
 
 We guarantee two gradings per lab: one for the version submitted before the
@@ -327,7 +336,7 @@ The exam has the same structure as these [old exams exams/ http://www.cse.chalme
 Unlike some earlier exams, we will not allow "cheat sheets".
 But the exam questions contain a [standard cheatsheet notes/db-cheatsheet.pdf], which is a reference card covering all E-R, SQL, relational algebra, and XML syntax that is needed in the exam.
 
-
+Exam review: 20 April at 14-16 in EDIT room 6106
 
 =Software=
 

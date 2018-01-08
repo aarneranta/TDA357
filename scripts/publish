@@ -2,7 +2,7 @@
 
 USERNAME=aarne
 RHOST=$USERNAME@remote12.chalmers.se
-RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2017/course/TDA357/VT2017/
+RPATH=/chalmers/groups/edu2009/www/www.cse.chalmers.se/year/2018/course/TDA357/VT2018/
 
 #make clean html
 #make -C _tex

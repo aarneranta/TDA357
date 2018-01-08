@@ -1,37 +1,21 @@
 Databases
 Course codes: Chalmers TDA357, GU DIT620
-Spring Term 2017
+Spring Term 2018
 
 %!target:html
 %!Encoding:utf8
 
 ''<center>''
-''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">GoogleGroup</A>'' | [LectureNotes http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/notes/db-notes.pdf] | [TimeEdit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html] | [Assignment ./lab/dblab.pdf] | [Eventbrite https://www.eventbrite.com/e/tda357-databases-lab-sessions-tickets-31257066728] | [Fire https://databases-lp3-17.frs.cse.chalmers.se/] | [LastYear http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/]
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2018">GoogleGroup</A>'' | [LectureNotes http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/notes/db-notes.pdf] | [TimeEdit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html] | [Assignment ./lab/dblab.pdf] | [Eventbrite https://www.eventbrite.com/e/tda357-databases-lab-sessions-tickets-31257066728] | [Fire https://databases-lp3-17.frs.cse.chalmers.se/] | [LastYear http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/]
 
-Official URL of this page: http://www.cse.chalmers.se/edu/year/2017/course/TDA357/VT2017/
+Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/
 ''</center>''
 
 
 
 ===News and changes===
 
-- April 13: Exam review on 20 April at 14-16 in EDIT room 6106
-- March 8: Lab 3 extension to Friday 10 March, final deadline to Wednesday 15 March.
-- March 2: Here you can find the ''<A HREF="https://jdbc.postgresql.org/download.html">JDBC driver</A>'' 
-- February 27: Lab 3 in [Lab PM ./lab/dblab.pdf] now, together with skeleton file [Game.java ./lab/Game.java]
-- February 22: [Exam cheatsheet notes/db-cheatsheet.pdf] published (preliminary version).
-- February 17: Lab 2 extension to Friday 24 February, Lab 3 to Wednesday 8 March.
-- February 13: Friday 17 February lab session added to the TimeEdit schema. Times of lectures 10 and 11 swapped.
-- February 6: Lab 2 in [Lab PM ./lab/dblab.pdf] now. Almost final version; some things may change. 
-- January 30: Query Converter binaries: [linux ./_downloads/qconv-linux.gz] and [mac ./_downloads/qconv-mac.gz].
-  For full functionality, you also need [graphviz http://www.graphviz.org/] (to show E-R diagrams) and
-  [latex https://www.latex-project.org/] (to show relational algebra)
-- January 26: Lab 1 in [Lab PM ./lab/dblab.pdf] considered final now (no changes since January 23)
-- January 23: [Lab PM ./lab/dblab.pdf] (assignment specification) published (preliminary version)
-- January 18: Fire is up and running! https://databases-lp3-17.frs.cse.chalmers.se/
-- January 17: More links and schedule items
-- January 16: Simplified formatting and some more content
-- January 11: First version of Spring Term 2017 web page
+- January 8: First version of Spring Term 2018 web page
 
 
 =Schedule=
@@ -49,89 +33,89 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TH>Material</TH>
 </TR>
 <TR>
-<TD>18/1 Wed</TD>
+<TD>17/1 Wed</TD>
 <TD>Lecture 1, Introduction</TD>
 <TD>Notes 1, Book 1</TD>
 </TR>
 <TR>
-<TD>19/1 Thu</TD>
+<TD>18/1 Thu</TD>
 <TD>Lecture 2, Data modelling with relations</TD>
 <TD>Notes 2, Book 2</TD>
 </TR>
 <TR style="background-color: orange">
-<TD>22/1 Sun</TD>
+<TD>21/1 Sun</TD>
 <TD>LAB 0 DEADLINE</TD>
 <TD>group registration</TD>
 </TR>
 <TR>
-<TD>23/1 Mon</TD>
+<TD>22/1 Mon</TD>
 <TD>Lecture 3, Entity-Relationship diagrams</TD>
 <TD>Notes 3, Book 4</TD>
 </TR>
 <TR style="background-color: yellow">
-<TD>25/1 Wed</TD>
+<TD>24/1 Wed</TD>
 <TD>Exercise 1, Entity-Relationship diagrams</TD>
 <TD><a href="http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/_downloads/Ex1-questions.pdf">Questions</a> <a href="_downloads/ex1-solutions.pdf">Solutions</a></TD>
 </TR>
 <TR>
-<TD>26/1 Thu</TD>
+<TD>25/1 Thu</TD>
 <TD>Lecture 4, Functional dependencies and normal forms</TD>
 <TD>Notes 4, Book 3</TD>
 </TR>
 <TR>
-<TD>30/1 Mon</TD>
+<TD>29/1 Mon</TD>
 <TD>Lecture 5, SQL construction and queries 1</TD>
 <TD>Notes 5, Book 6</TD>
 </TR>
 <TR style="background-color: yellow">
-<TD>1/2 Wed</TD>
+<TD>31/1 Wed</TD>
 <TD>Exercise 2, Functional dependencies, SQL</TD>
 <TD><a href="http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/_downloads/Ex2-questions.pdf">Questions</a> <a href="http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/_downloads/Ex2-solutions.pdf">Solutions</a></TD>
 </TR>
 <TR>
-<TD>2/2 Thu</TD>
+<TD>1/2 Thu</TD>
 <TD>Lecture 6, SQL construction and queries 2</TD>
 <TD>Notes 5, Book 6</TD>
 </TR>
 <TR style="background-color: orange">
-<TD>5/2 Sun</TD>
+<TD>4/2 Sun</TD>
 <TD>LAB 1 DEADLINE</TD>
 <TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
 <TR>
-<TD>6/2 Mon</TD>
+<TD>5/2 Mon</TD>
 <TD>Lecture 7, SQL constraints and triggers</TD>
 <TD>Notes 6, Book 7</TD>
 </TR>
 <TR>
-<TD>13/2 Mon</TD>
+<TD>12/2 Mon</TD>
 <TD>Lecture 8, (by Steven) SQL in software applications (JDBC, SQL injection)</TD>
 <TD>Notes 8, Book 9, <a href="slides/jdbc-sqli-1pp.pdf">slides (1pp)</a>, <a href="slides/jdbc-sqli-6pp.pdf">slides (6pp)</a></TD>
 </TR>
 <TR style="background-color: yellow">
-<TD>15/2 Wed</TD>
+<TD>14/2 Wed</TD>
 <TD>Exercise 3, Triggers</TD>
 <TD>
 <a href="_downloads/Ex3-questions.html"> Questions</a> <a href="_downloads/ex3/solutions.txt">Solution</a> <a href="_downloads/ex3/exercise1-setup.sql">setup1</a> <a href="_downloads/ex3/exercise2-setup.sql">setup2</a> <a href="_downloads/ex3/exercise3-setup.sql">setup3</a></TD>
 </TD>
 </TR>
 <TR>
-<TD>16/2 Thu</TD>
+<TD>15/2 Thu</TD>
 <TD>Lecture 9, Relational algebra and query compilation</TD>
 <TD>Notes 7, Book 2,5,16</TD>
 </TR>
 <TR>
-<TD>20/2 Mon</TD>
+<TD>19/2 Mon</TD>
 <TD>Lecture 11, Alternative data models</TD>
 <TD>Notes 10, Book 11,12</TD>
 </TR>
 <TR style="background-color: yellow">
-<TD>22/2 Wed</TD>
+<TD>21/2 Wed</TD>
 <TD>Exercise 4, JDBC</TD>
 <TD><a href="tutorials/jdbc-questions.pdf">Questions</a> <a href="tutorials/jdbc-solutions.tar.gz">Solutions</a></TD>
 </TR>
 <TR>
-<TD>23/2 Thu</TD>
+<TD>22/2 Thu</TD>
 <TD>Lecture 10, (by Steven) Remaining SQL topics: transaction, authorization, indexes</TD>
 <TD>Notes 9, Book 6,8,10,
 <a href="slides/LP3-TDA357-transactions-authorization-indexes-1pp.pdf">slides (1pp)</a>,
@@ -139,23 +123,28 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TD>
 </TR>
 <TR style="background-color: orange">
-<TD>24/2 Fri</TD>
+<TD>23/2 Fri</TD>
 <TD>LAB 2 DEADLINE</TD>
 <TD><a href="./lab/dblab.pdf">Lab PM</a></TD>
 </TR>
 <TR>
-<TD>27/2 Mon</TD>
-<TD>Lecture 12, Industrial guest lecture: Oscar Söderlund, Spotify</TD>
+<TD>26/2 Mon</TD>
+<TD>Lecture 12, Industrial guest lecture (TBC)</TD>
 <TD>Cassandra</TD>
 </TR>
 <TR style="background-color: yellow">
-<TD>1/3 Wed</TD>
+<TD>28/2 Wed</TD>
 <TD>Exercise 5, Transactions etc</TD>
 <TD><a href="_downloads/transaction.shtml">Questions</a>  <a href="_downloads/solutions5.shtml">Solution</a> <a href="_downloads/Transactions.pdf">Slides</a></TD>
 </TD>
 </TR>
 <TR>
-<TD>2/3 Thu</TD>
+<TD>1/3 Thu</TD>
+<TD>Lecture 13, recap and exam preparation</TD>
+<TD>Notes, Book</TD>
+</TR>
+<TR>
+<TD>5/3 Mon</TD>
 <TD>Lecture 13, recap and exam preparation</TD>
 <TD>Notes, Book</TD>
 </TR>
@@ -185,7 +174,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 '''
 
 
-The official course schema is in [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
+The official course schema is in [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ3560YvQQ05Z6270Y0Zy6007311Y54Q785.html]
 
 
 
@@ -212,18 +201,12 @@ The full description with learning outcomes is available in the
 =Teachers=
 
 - [Aarne Ranta http://www.cse.chalmers.se/~aarne/], course responsible.
-- [Steven Van Acker https://www.chalmers.se/en/Staff/Pages/acker.aspx], Co-Lecturer
-- [Herbert Lange https://www.chalmers.se/sv/personal/Sidor/herbert-lange.aspx]
-- [Markus Aronsson https://www.chalmers.se/sv/personal/Sidor/mararon.aspx]
-- [Per Hallgren https://www.chalmers.se/sv/personal/Sidor/hallgrep.aspx]
-- [Hamid Ebadi Tavallaei https://www.chalmers.se/en/staff/Pages/hamide.aspx]
-- Timon Lapawczyk
-- Juan Gabriel Ricart
+
 
 
 The fastest way to get an answer is to mail the course's
 Google group
-''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2018">https://groups.google.com/forum/#!forum/tda357-vt2018</A>''
 
 
 =Google Group=
@@ -231,22 +214,22 @@ Google group
 If you have any general questions regarding the course, the labs or the exercises, 
 please ask them in our
 Google group
-''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2018">https://groups.google.com/forum/#!forum/tda357-vt2018</A>''
 This will reach all teachers and fellow students. 
 If you are not yet member of the group, you have to
 - get a google account (if you don't have it yet)
 - go to
-  ''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2017">https://groups.google.com/forum/#!forum/tda357-vt2017</A>''
+  ''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2018">https://groups.google.com/forum/#!forum/tda357-vt2018</A>''
 - request membership in the group
 
 
 =Laboration times and supervision=
 
-See [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
+See [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ3560YvQQ05Z6270Y0Zy6007311Y54Q785.html]
 for times and places.
 
-You should register in the lab session by using this link to
-[Eventbrite https://www.eventbrite.com/e/tda357-databases-lab-sessions-tickets-31257066728]
+%You should register in the lab session by using this link to
+%[Eventbrite https://www.eventbrite.com/e/tda357-databases-lab-sessions-tickets-31257066728]
 
 Course assistants will be in the lab rooms to help.
 
@@ -266,11 +249,11 @@ In addition, there is a "Lab 0", which consists of just registering the group.
 
 The specification ("lab PM") is [here ./lab/dblab.pdf]
 
-Reporting is done via 
-[Fire https://databases-lp3-17.frs.cse.chalmers.se/]
+Reporting is done via Fire.
+%[Fire https://databases-lp3-17.frs.cse.chalmers.se/]
 Before reporting assignments 1 and 2, you must run your program through a test suite.
 
-**Final deadline is Wednesday 15 March** for all returned and corrected labs.
+**Final deadline is Friday 16 March** for all returned and corrected labs.
 No labs will be graded if sent after this deadline.
 
 We guarantee two gradings per lab: one for the version submitted before the
@@ -325,18 +308,18 @@ but will be confirmed a week before each class.
 
 Written exam, usual grading scales.
 
-Date: 17 March
+Date: 16 March
 
 Time: 8:30 - 12:30
 
-Place: HA, HB, HC
+Place: TBA (Johanneberg)
 
 The exam has the same structure as these [old exams exams/ http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/exam/index.html].
 
-Unlike some earlier exams, we will not allow "cheat sheets".
-But the exam questions contain a [standard cheatsheet notes/db-cheatsheet.pdf], which is a reference card covering all E-R, SQL, relational algebra, and XML syntax that is needed in the exam.
+The exam questions contain a [standard cheatsheet notes/db-cheatsheet.pdf], which is a reference card covering all E-R, SQL, relational algebra, and XML syntax that is needed in the exam.
 
 Exam review: 20 April at 14-16 in EDIT room 6106
+
 
 =Software=
 

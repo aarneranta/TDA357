@@ -15,6 +15,7 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
+- January 17: Some date changes in lectures, exercises, and labs. Should be final now. Also made a new version of notes available.
 - January 15: Updated the schedule of lectures, exercises, and labs. Updated Lab PM and Notes coming soon.
 - January 8: First version of Spring Term 2018 web page
 
@@ -24,7 +25,7 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 Material:
 Notes = [course notes notes/db-notes.pdf],
 Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-Systems-Pearson-New-International-Edition-The-Complete-Book-2E/9781292024479.page]
-//The notes references are to the forthcoming 2018 version; the 2017 version has a different order.//
+
 '''
 
 <TABLE BORDER="1" CELLPADDING="4">
@@ -33,121 +34,118 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TH>Title</TH>
 <TH>Material</TH>
 </TR>
+
 <TR>
 <TD>17/1 Wed</TD><TD>Lecture 1, Introduction</TD>
 <TD>Notes 1, Book 1</TD>
 </TR>
+
 <TR>
 <TD>18/1 Thu</TD><TD>Lecture 2, SQL 1 </TD>
 <TD>Notes 2, Book 6</TD>
 </TR>
-<TR style="background-color: orange">
-<TD>21/1 Sun</TD><TD>LAB 0 DEADLINE</TD>
+
+<TR style="background-color: orange"><TD>21/1 Sun</TD><TD>LAB 0 DEADLINE</TD>
 <TD>group registration</TD>
 </TR>
+
 <TR>
-<TD>22/1 Mon</TD><TD>Lecture 3, SQL 2</TD>
-<TD>Notes 2, Book 6</TD>
+<TD>22/1 Mon</TD><TD>Lecture 3, SQL 2</TD><TD>Notes 2, Book 6</TD>
 </TR>
-<TR style="background-color: yellow">
-<TD>24/1 Wed</TD><TD>Exercise 1, SQL</TD>
+
+<TR style="background-color: yellow"><TD>24/1 Wed</TD><TD>Exercise 1, SQL</TD>
 <TD></TD>
 </TR>
-<TR>
-<TD>25/1 Thu</TD><TD>Lecture 4, Entity-Relationship modelling</td>
+
+<TR><TD>25/1 Thu</TD><TD>Lecture 4, Entity-Relationship modelling</td>
 <TD>Notes 3, Book 4</TD>
 </TR>
-<TR style="background-color: orange">
-<TD>28/1 Sun</TD>
-<TD>LAB 1 DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a> SQL tables and queries</TD>
-</TR>
-<TR>
-<TD>29/1 Mon</TD><TD>Lecture 5, The relational data model</TD>
+
+<TR><TD>29/1 Mon</TD><TD>Lecture 5, The relational data model</TD>
 <TD>Notes 4, Book 2</TD>
 </TR>
-<TR style="background-color: yellow">
-<TD>31/1 Wed</TD>
+
+<TR style="background-color: orange"><TD>30/1 Tue</TD><TD>LAB 1 DEADLINE</TD>
+<TD><a href="lpm">Lab PM</a> SQL tables and queries</TD>
+</TR>
+
+<TR style="background-color: yellow"><TD>31/1 Wed</TD>
 <TD>Exercise 2, Entity-Relationship modelling</TD>
 <TD></TD>
 </TR>
-<TR>
-<TD>1/2 Thu</TD><TD>Lecture 6, Functional dependencies and normal forms</TD>
+
+<TR><TD>1/2 Thu</TD><TD>Lecture 6, Functional dependencies and normal forms</TD>
 <TD>Notes 5, Book 3</TD>
 </TR>
-<TR>
-<TD>5/2 Mon</TD><TD>Lecture 7, SQL constraints and triggers</TD>
-<TD>Notes 2,7 ; Book 7</TD>
-</TR>
-<TR style="background-color: orange">
-<TD>11/2 Sun</TD>
-<TD>LAB 2 DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a> ER and FD</TD>
-</TR>
-<TR style="background-color: yellow">
-<TD>14/2 Wed</TD>
-<TD>Exercise 3, Triggers</TD>
-<TD>
-</TD>
-</TR>
-<TR>
-<TD>15/2 Thu</TD><TD>Lecture 8, SQL in software applications (JDBC, SQL injection)</TD>
-<TD>Notes 7, Book 9</a></TD>
-</TR>
-<TR>
-<TD>19/2 Mon</TD><TD>Lecture 9, Relational algebra and query compilation</TD>
+
+<TR><TD>5/2 Mon</TD><TD>Lecture 7, Relational algebra and query compilation</TD>
 <TD>Notes 6, Book 2,5,16</TD>
 </TR>
 <TR>
+
+<TR style="background-color: yellow"><TD>14/2 Wed</TD><TD>Exercise 3, Theory topics: relations and dependencies</TD>
+<TD></TD>
+</TR>
+
+<TR><TD>15/2 Thu</TD><TD>Lecture 8, SQL constraints and triggers</TD>
+<TD>Notes 2,7 ; Book 7</TD>
+</TR>
+
+<TR style="background-color: orange"><TD>16/2 Fri</TD><TD>LAB 2 DEADLINE</TD>
+<TD><a href="lpm">Lab PM</a> ER and FD</TD>
+</TR>
+
+
+<TD>19/2 Mon</TD><TD>Lecture 9, SQL in software applications (JDBC, SQL injection)</TD>
+<TD>Notes 7, Book 9</a></TD>
+</TR>
+
 <TD>22/2 Thu</TD><TD>Lecture 10, Remaining SQL topics: transaction, authorization, indexes</TD>
 <TD>Notes 2,7; Book 6,8,10</TD>
 </TR>
-<TR style="background-color: yellow">
-<TD>21/2 Wed</TD>
-<TD>Exercise 4, JDBC</TD>
-<TD><a href="tutorials/jdbc-questions.pdf">Questions</a> <a href="tutorials/jdbc-solutions.tar.gz">Solutions</a></TD>
+
+<TR style="background-color: yellow"><TD>21/2 Wed</TD><TD>Exercise 4, Constraints and triggers</TD><TD></TD>
 </TR>
-<TR>
-<TD>26/2 Mon</TD><TD>Lecture 11, Alternative data models</TD>
-<TD>Notes 8, Book 11,12
-</TD>
+
+<TR><TD>26/2 Mon</TD><TD>Lecture 11, Alternative data models</TD>
+<TD>Notes 8, Book 11,12</TD>
 </TR>
-<TR style="background-color: orange">
-<TD>25/2 Sun</TD>
-<TD>LAB 3 DEADLINE</TD>
+
+<TR style="background-color: orange"><TD>27/2 Tue</TD><TD>LAB 3 DEADLINE</TD>
 <TD><a href="lpm">Lab PM</a> Triggers</TD>
 </TR>
-<TR>
-<TD>1/3 Thu</TD><TD>Lecture 12, Industrial guest lecture (TBC)</TD>
-<TD>Cassandra</TD>
-</TR>
-<TR style="background-color: yellow">
-<TD>28/2 Wed</TD><TD>Exercise 5, alternative data models</TD>
+
+<TR style="background-color: yellow"><TD>28/2 Wed</TD><TD>Exercise 5, JDBC</TD>
 <TD></TD>
 </TR>
+
+<TR><TD>1/3 Thu</TD><TD>Lecture 12, Industrial guest lecture (TBC)</TD>
+<TD>Cassandra</TD>
+</TR>
+
+
 <TD>5/3 Mon</TD><TD>Lecture 13, recap and exam preparation</TD>
 <TD>Notes, Book</TD>
 </TR>
-<TR style="background-color: yellow">
-<TD>8/3 Wed</TD>
-<TD>Exercise 6, theory topics: relations and dependencies</TD>
+
+<TR style="background-color: yellow"><TD>8/3 Wed</TD>
+<TD>Exercise 6, Alternative data models</TD>
 <TD></TD>
 </TR>
-<TR style="background-color: orange">
-<TD>11/3 Sun</TD>
-<TD>LAB 4 DEADLINE</TD>
+
+<TR style="background-color: orange"><TD>13/3 Tue</TD><TD>LAB 4 DEADLINE</TD>
 <TD><a href="lpm">Lab PM</a>JDBC</TD>
 </TR>
-<TR style="background-color: orange">
-<TD>15/3 Thu</TD>
-<TD>LAB RESUBMISSION DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a></TD>
-</TR>
-<TR style="background-color: red">
-<TD>16/3 Fri</TD>
-<TD>Exam</TD>
+
+<TR style="background-color: red"><TD>16/3 Fri</TD><TD>Exam</TD>
 <TD>old exams and a quiz</TD>
 </TR>
+
+
+<TR style="background-color: orange"><TD>18/3 Sun</TD><TD>LAB RESUBMISSION DEADLINE</TD>
+<TD><a href="lpm">Lab PM</a></TD>
+</TR>
+
 </TABLE>
 
 
@@ -225,10 +223,10 @@ Normally, each student should attend **at most one** supervised laboration time 
 There are three assignments (a.k.a. "laborations", "labs"), written individually or in pairs.
 In addition, there is a "Lab 0", which consists of just registering the group.
 - deadline 21/1: Lab 0: PostgreSQL and group registration
-- deadline 28/1: Lab 1: SQL tables and queries
-- deadline 11/2: Lab 2: design theory: ER modelling and functional dependencies 
-- deadline 25/2: Lab 3: triggers
-- deadline 11/3: Lab 4: Java application
+- deadline 30/1: Lab 1: SQL tables and queries
+- deadline 15/2: Lab 2: design theory: ER modelling and functional dependencies 
+- deadline 27/2: Lab 3: triggers
+- deadline 13/3: Lab 4: Java application
 
 
 The specification ("lab PM") is soon there.
@@ -238,7 +236,7 @@ Reporting is done via Fire.
 %[Fire https://databases-lp3-17.frs.cse.chalmers.se/]
 Before reporting assignments 1 and 2, you must run your program through a test suite.
 
-**Final deadline is Thursday 15 March** for all returned and corrected labs.
+**The final deadline is Sunday 18 March** for all returned and corrected labs.
 No labs will be graded if sent after this deadline.
 
 We guarantee two gradings per lab: one for the version submitted before the
@@ -275,7 +273,7 @@ The chapters relevant to this course are the same, so either version will be OK.
 The book is available at Cremona and at web bookshops.
 
 You can also use an on-line book manuscript, referred to as "notes": [Databases in 88+ pages notes/db-notes.pdf].
-Our plan is to publish these notes as a short course book, and your feedback will be appreciated!
+Our plan is to publish these notes as a short course book later, and your feedback will be appreciated!
 
 
 
@@ -288,8 +286,8 @@ Each session is given two or three times; you are supposed to participate at mos
 See [Time Edit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html]
 for exact times and places.
 
-The questions are based on [last year's questions http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/tutorials/index.html]
-but will be confirmed a week before each class.
+The questions will be posted a few days before each class.
+The answers will be posted after each class, to encourage everyone to try the exercises themselves.
 
 
 =Exam=
@@ -302,7 +300,7 @@ Time: 8:30 - 12:30
 
 Place: TBA (Johanneberg)
 
-The exam has the same structure as these [old exams exams/ http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/exam/index.html].
+The exam has a similar structure as these [old exams http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/exam/index.html].
 
 The exam questions contain a [standard cheatsheet notes/db-cheatsheet.pdf], which is a reference card covering all E-R, SQL, relational algebra, and XML syntax that is needed in the exam.
 

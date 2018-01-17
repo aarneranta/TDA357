@@ -6,7 +6,12 @@ Spring Term 2018
 %!Encoding:utf8
 
 ''<center>''
-''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2018">GoogleGroup</A>'' | [LectureNotes http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/notes/db-notes.pdf] | [TimeEdit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html] | [Assignment plab]  | [Fire https://databases-lp3-17.frs.cse.chalmers.se/] | [LastYear http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/]
+''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2018">GoogleGroup</A>'' |
+[LectureNotes http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/notes/db-notes.pdf] |
+[TimeEdit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html] |
+[Assignment plab]  |
+[Fire https://databases-lp3-18.frs.cse.chalmers.se/] |
+[LastYear http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/]
 
 Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/
 ''</center>''
@@ -232,8 +237,7 @@ In addition, there is a "Lab 0", which consists of just registering the group.
 The specification ("lab PM") is soon there.
 %[here ./lab/dblab.pdf]
 
-Reporting is done via Fire.
-%[Fire https://databases-lp3-17.frs.cse.chalmers.se/]
+Reporting is done via [Fire https://databases-lp3-18.frs.cse.chalmers.se/]
 Before reporting assignments 1 and 2, you must run your program through a test suite.
 
 **The final deadline is Sunday 18 March** for all returned and corrected labs.

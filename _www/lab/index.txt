@@ -1,123 +1,76 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
-<HEAD>
-<META NAME="generator" CONTENT="http://txt2tags.org">
-<TITLE>Database Programming Assignment ("Lab")</TITLE>
-</HEAD><BODY BGCOLOR="white" TEXT="black">
-<CENTER>
-<H1>Database Programming Assignment ("Lab")</H1>
-<FONT SIZE="4"><I>Chalmers/GU TDA357/DIT620</I></FONT><BR>
-<FONT SIZE="4">LP3, 2018</FONT>
-</CENTER>
+Database Programming Assignment ("Lab")
+Chalmers/GU TDA357/DIT620
+LP3, 2018
 
-<P></P>
-<HR NOSHADE SIZE=1>
-<P></P>
 
-  <UL>
-  <LI><A HREF="#toc1">Purpose</A>
-  <LI><A HREF="#toc2">Assignment submission and deadlines</A>
-  <LI><A HREF="#toc3">Introduction</A>
-  <LI><A HREF="#toc4">Domain description</A>
-  <LI><A HREF="#toc5">System Specification</A>
-  <LI><A HREF="#toc6">Task 1: Constructing the database</A>
-  <LI><A HREF="#toc7">Tasks 2,3,4: coming soon</A>
-  </UL>
+//Draft, modified by Aarne Ranta from earlier years' specifications//
 
-<P></P>
-<HR NOSHADE SIZE=1>
-<P></P>
-<P>
-<I>Draft, modified by Aarne Ranta from earlier years' specifications</I>
-</P>
 
-<A NAME="toc1"></A>
-<H1>Purpose</H1>
+=Purpose=
 
-<P>
+
 The purpose of this assignment is to give you hands-on experience with
 designing, constructing and using a database for a real-world-like domain. You will
 see all aspects of database creation, from understanding the domain to using
 the final database from external applications.
-</P>
 
-<A NAME="toc2"></A>
-<H1>Assignment submission and deadlines</H1>
 
-<P>
+=Assignment submission and deadlines=
+
 To pass the programming assignment, you must pass all five tasks described on
 this page. You will do the assignment in groups of two.
-</P>
-<P>
+
 You must submit your solutions through the
-<A HREF="https://databases-lp3-18.frs.cse.chalmers.se/">Fire</A> reporting system.
-</P>
-<P>
+[Fire https://databases-lp3-18.frs.cse.chalmers.se/] reporting system.
+
 You must submit your group's solutions to each task by the given
-deadline, which are given on the <A HREF="../index.html">course web page</A>.
+deadline, which are given on the [course web page ../index.html].
 After submission, your assignment will be graded ("pass" or "reject") and you
 will receive comments on your solution (for tasks 1, 2, and 3). If your
 submission is rejected, you are allowed to refine your solution and re-submit
 it. There will be set of automated test to preliminarily grade your assignment.
-</P>
-<P>
+
 To pass the final part of the assignment, you must demonstrate your system to
 one of the teachers. Your files for task 4 must be uploaded to the Fire system
-<B>after</B> you have demonstrated your system, and <B>before</B> the task 4
+**after** you have demonstrated your system, and **before** the task 4
 deadline.
-</P>
 
-<A NAME="toc3"></A>
-<H1>Introduction</H1>
+=Introduction=
 
-<P>
 In this assignment you will design and construct a database, together with a
 front end application, that handles university students and courses. You will
 do this in four distinct tasks:
-</P>
++ Construction: create the database and explore it with queries
++ Design: take a step back and redesign the database from a more theoretical point of view
++ Usage: define more constraints and triggers to maintain the database
++ Interface: write a wrapper program to permit database access without explicit use of SQL
 
-<OL>
-<LI>Construction: create the database and explore it with queries
-<LI>Design: take a step back and redesign the database from a more theoretical point of view
-<LI>Usage: define more constraints and triggers to maintain the database
-<LI>Interface: write a wrapper program to permit database access without explicit use of SQL
-</OL>
 
-<P>
 All of the tasks are related to each other.
 They deal with the same database, and tasks 3 an 4 build on task 1.
 Task 2 is an independent analysis and sanity check on task 1.
 (In previous years, the Design task 2 was made before the Construction task 1.
 We have swapped the order for two reasons:
-</P>
+- design is more theoretical activity than construction, and hard to understand completely without prior practice
+- construction on a common schema, rather than everyone's own design, permits more substantial automated checking than before
 
-<UL>
-<LI>design is more theoretical activity than construction, and hard to understand completely without prior practice
-<LI>construction on a common schema, rather than everyone's own design, permits more substantial automated checking than before
-</UL>
-
-<P>
+  
 For each task you will hand in and get feedback on your results. Since
 errors in one task may propagate to the next one, it is wise to hand in
 your solutions early to get more chances for feedback.
-</P>
-<P>
+
 Be sure to read through the full description of the assignment before
 you start since the requirements we place on the system must influence
 your initial design as well.
-</P>
 
-<A NAME="toc4"></A>
-<H1>Domain description</H1>
+=Domain description=
 
-<P>
 The domain that you will model in this assignment is that of courses and
 students at a university. So as not to make the task too large and
 unspecified, you will here get a description of the domain that
 restricts the problem somewhat. Note that the described domain is not
 identical to Chalmers or GU.
-</P>
-<P>
+
 The university for which you are building this system is organized into
 departments for employees, such as the Dept. of Computing Science (CS),
 and study programmes for students, such as the Computer Science and
@@ -126,8 +79,7 @@ several departments may collaborate on a programme, which is the case
 with CSEP that is co-hosted by the CS department and the Department of
 Computer Engineering (CE). Department names and abbreviations are
 unique, as are programme names but not necessarily abbreviations.
-</P>
-<P>
+
 Each study programme is further divided into branches, for example CSEP
 has branches Computer Languages, Algorithms, Software Engineering etc.
 Note that branch names are unique within a given programme, but not
@@ -138,15 +90,13 @@ courses. For each branch, there are additional mandatory courses that
 the students taking that branch must read. Branches also name a set of
 recommended courses from which all students taking that branch must read
 a certain amount to fulfill the requirements of graduation, see below.
-</P>
-<P>
+
 A student always belongs to a programme. Students must pick a single
 branch within that programme, and fulfill its graduation requirements,
 in order to graduate. Typically students choose which branch to take in
 their fourth year, which means that students who are in the early parts
 of their studies may not yet belong to any branch.
-</P>
-<P>
+
 Courses are given by a department (e.g. CS gives the Databases course),
 and may be read by students reading any study programme. Some courses
 may be mandatory for certain programmes, but not so for others. Students
@@ -160,16 +110,14 @@ have more than one classification. The university will occasionally
 introduce other classifications. Some courses have prerequisites, i.e.
 other courses that must be read before a student is allowed to register
 to it.
-</P>
-<P>
+
 Students need to register for courses in order to read them. To be
 allowed to register, the student must first fulfill all prerequisites
 for the course. It should not be possible for a student to register to a
 course unless the prerequisite courses are already passed. It should not
 be possible for a student to register for a course which they have
 already passed.
-</P>
-<P>
+
 If a course becomes full, subsequent registering students are put on a
 waiting list. If one of the previously registered students decides to
 drop out, such that there is an open slot on the course, that slot is
@@ -177,15 +125,13 @@ given to the student who has waited the longest. When the course is
 finished, all students are graded on a scale of 'U', '3', '4', '5'.
 Getting a 'U' means the student has not passed the course, while the
 other grades denote various degrees of success.
-</P>
-<P>
+
 A study administrator can override both course prerequisite requirements
 and size restrictions and add a student directly as registered to a
 course. (Note: you will not implement any front end application for
 study administrators, only for students. The database must still be able
 to handle this situation.)
-</P>
-<P>
+
 For a student to graduate there are a number of requirements she must
 first fulfill. She must have passed (have at least grade 3) in all
 mandatory courses of the study programme she belongs to, as well as the
@@ -199,25 +145,20 @@ are also classified in some way are counted just like any other course.
 As an example, if one of the mandatory courses of a programme is also a
 seminar course, students of that programme will not be required to read
 any more seminar courses.
-</P>
 
-<A NAME="toc5"></A>
-<H1>System Specification</H1>
 
-<P>
+=System Specification=
+
 You will design and implement a database for the above domain, and a
 front end application intended for students of the university. Through
 the application they should be able to see their own information,
 register to, and unregister from courses.
-</P>
-<P>
+
 Formally, your application should have the following modes:
-</P>
-<P>
+
 -  Info: Given a students national identification number, the system
    should provide
-</P>
-<P>
+
    -  the name of the student, the students national identification
       number and their university issued login name/ID (something
       similar to how the CID works for chalmers students)
@@ -226,8 +167,7 @@ Formally, your application should have the following modes:
    -  the courses that the student is registered to.
    -  whether or not the student fulfills the requirements for
       graduation
-</P>
-<P>
+
 -  Register: Given a student id number and a course code, the system
    should try to register the student for that course. If the course is
    full, the student should be placed in the waiting list for that
@@ -244,34 +184,30 @@ Formally, your application should have the following modes:
    student is not registered to the course when trying to unregister,
    the system need not notify this, but no student from the waiting list
    (if applicable) should be promoted in that case.
-</P>
 
-<A NAME="toc6"></A>
-<H1>Task 1: Constructing the database</H1>
 
-<P>
+
+
+
+=Task 1: Constructing the database=
+
 Your task is to construct the database by implementing the database schema in a database engine
 (PostgreSQL).
 The schema is explained abstractly in this file:
-<center>
-<A HREF="./task1.txt">Abstract schema for database task 1</A>
-</center>
-You should implement the schema with <CODE>CREATE TABLE</CODE> statements that
-</P>
+''<center>''
+[Abstract schema for database task 1 ./task1.txt]
+''</center>''
+You should implement the schema with ``CREATE TABLE`` statements that
+- use exactly the given table and attribute names
+- express the same primary key, foreign key, and uniqueness constraints
+- use reasonable types (not expressed in the abstract schema, but should be obvious from the domain description)
 
-<UL>
-<LI>use exactly the given table and attribute names
-<LI>express the same primary key, foreign key, and uniqueness constraints
-<LI>use reasonable types (not expressed in the abstract schema, but should be obvious from the domain description)
-</UL>
 
-<P>
 Thus you should create all tables, marking key and foreign key constraints in the
    process, and you should also insert checks that ensure that only valid data
    can be inserted in the database. Examples of invalid data would be the grade
    '6', or a course that takes a negative number of students.
-</P>
-<P>
+
 When you have created the tables, you should fill the tables with example
    data. This can be time-consuming, but it is an important part of the
    development of a database. Having data in the database is crucial in order
@@ -281,88 +217,73 @@ When you have created the tables, you should fill the tables with example
    inserting tons of data is of no use if the data still doesn't test all parts
    of the database. Here is a (very) non-exhaustive list of data you will need
    to include:
-</P>
-
-<UL>
-<LI>A handful of students, at least one of which fulfils the requirements for
+- A handful of students, at least one of which fulfils the requirements for
      graduation and a couple that do not for different reasons.
-<LI>A number of courses that test all of the various aspects a course.  This
+- A number of courses that test all of the various aspects a course.  This
      includes classifications, mandatory, recommended etc. You need at least
      three waiting students for two different (limited) courses.
-</UL>
 
-<P>
-<B>Important:</B> When you insert data in the database, do it by writing the
+
+**Important:** When you insert data in the database, do it by writing the
    insert statements in a file that can then be executed.  This way you won't
    have to re-do all the work if there is something that you need to change
    with the table.
-</P>
-<P>
+   
 Since you know exactly what information your application will need from the
    database, in what forms, it is a good idea to write views that provide that
    information in a simple form. In a real setting, we would even ensure using
-   privileges that the application <I>cannot</I> work with anything but these views.
+   privileges that the application //cannot// work with anything but these views.
    Unfortunately we cannot let you test working with privileges on the
    PostgreSQL machine we use, but we will still expect your application to
    adhere to the privileges we list.
-</P>
-<P>
-Following the system specification, create these views:
-</P>
 
-<UL>
-<LI>View: <CODE>StudentsFollowing(ssn,name,program,branch)</CODE>
+Following the system specification, create these views:
+
+- View: ``StudentsFollowing(ssn,name,program,branch)``
        For all students, their basic information (name etc.), and the programme
        and branch (if any) they are following.
-<LI>View: <CODE>FinishedCourses(ssn,name,courseCode,courseName,grade)</CODE>
+- View: ``FinishedCourses(ssn,name,courseCode,courseName,grade)``
        For all students, all finished courses, along with their names, grades
-       (grade <CODE>'U'</CODE>, <CODE>'3'</CODE>, <CODE>'4'</CODE> or <CODE>'5'</CODE>) and number of credits.
-<LI>View: <CODE>Registrations(courseCode,courseName,ssn,studentName,status)</CODE>
+       (grade ``'U'``, ``'3'``, ``'4'`` or ``'5'``) and number of credits.
+- View: ``Registrations(courseCode,courseName,ssn,studentName,status)``
        All registered and waiting students for all courses, along with their
-       waiting status (<CODE>'registered'</CODE> or <CODE>'waiting'</CODE>).
-<LI>View: <CODE>PassedCourses(ssn,courseCode,credits)</CODE>
+       waiting status (``'registered'`` or ``'waiting'``).
+- View: ``PassedCourses(ssn,courseCode,credits)``
        For all students, all passed courses, i.e. courses finished with a grade
        other than 'U', and the number of credits for those courses. This view
-       is intended as a helper view towards the <CODE>PathToGraduation</CODE> view (and
+       is intended as a helper view towards the ``PathToGraduation`` view (and
        for task 4), and will not be directly used by your application.
-<LI>View: <CODE>UnreadMandatory(ssn,courseCode)</CODE>
+- View: ``UnreadMandatory(ssn,courseCode)``
        For all students, the mandatory courses (branch and programme) they have
        not yet passed. This view is intended as a helper view towards the
-       <CODE>PathToGraduation</CODE> view, and will not be directly used by your
+       ``PathToGraduation`` view, and will not be directly used by your
        application.
-<LI>View: <CODE>PathToGraduation(ssn,name,creditsTaken,coursesToTake,creditsMath,creditsResearch,seminarsRead,status)</CODE>
+- View: ``PathToGraduation(ssn,name,creditsTaken,coursesToTake,creditsMath,creditsResearch,seminarsRead,status)``
        For all students, their path to graduation, i.e. a view with columns for
-       -  <CODE>creditsTaken</CODE>: the number of credits they have taken.
-       -  <CODE>coursesToTake</CODE>: the number of mandatory courses they have yet to read (branch
+       -  ``creditsTaken``: the number of credits they have taken.
+       -  ``coursesToTake``: the number of mandatory courses they have yet to read (branch
           or programme).
-       -  <CODE>creditsMath</CODE>: the number of credits they have taken in courses that are
+       -  ``creditsMath``: the number of credits they have taken in courses that are
           classified as math courses.
-       -  <CODE>creditsResearch</CODE>: the number of credits they have taken in courses that are
+       -  ``creditsResearch``: the number of credits they have taken in courses that are
           classified as research courses.
-       -  <CODE>seminarsRead</CODE>: the number of seminar courses they have read.
-       -  <CODE>status</CODE>: whether or not they qualify for graduation.
-</UL>
+       -  ``seminarsRead``: the number of seminar courses they have read.
+       -  ``status``: whether or not they qualify for graduation.
 
-<P>
-<B>Deliverables</B>: For task 1, you should submit the following files through Fire
-</P>
 
-<UL>
-<LI><CODE>tables.sql</CODE>: your SQL code for creating the tables.
-<LI><CODE>insert.sql</CODE>: your SQL code containing the insert statements for the data.
-<LI><CODE>views.sql</CODE>: your SQL code for creating the listed views.
-</UL>
+**Deliverables**: For task 1, you should submit the following files through Fire
 
-<P>
+- ``tables.sql``: your SQL code for creating the tables.
+- ``insert.sql``: your SQL code containing the insert statements for the data.
+- ``views.sql``: your SQL code for creating the listed views.
+
+
   Note that SQL code should be in plain text format. Make sure that
     PostgreSQL can execute your files before you hand them in. Test this by
     clearing out your database and then running
     your SQL files again.
-</P>
 
-<A NAME="toc7"></A>
-<H1>Tasks 2,3,4: coming soon</H1>
 
-<!-- html code generated by txt2tags 2.6 (http://txt2tags.org) -->
-<!-- cmdline: txt2tags -thtml -\-toc index.txt -->
-</BODY></HTML>
+
+=Tasks 2,3,4: coming soon=
+

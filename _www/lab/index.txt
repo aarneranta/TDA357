@@ -1,9 +1,9 @@
-Database Programming Assignment ("Lab")
+Database Programming Assignment ("Lab PM")
 Chalmers/GU TDA357/DIT620
 LP3, 2018
 
 
-//Draft, modified by Aarne Ranta from earlier years' specifications//
+//Modified by Aarne Ranta from earlier years' specifications by many other teachers at Chalmers and GU//
 
 
 =Purpose=
@@ -197,10 +197,12 @@ The schema is explained abstractly in this file:
 ''<center>''
 [Abstract schema for database task 1 ./task1.txt]
 ''</center>''
+
 You should implement the schema with ``CREATE TABLE`` statements that
 - use exactly the given table and attribute names
 - express the same primary key, foreign key, and uniqueness constraints
 - use reasonable types (not expressed in the abstract schema, but should be obvious from the domain description)
+- no column may accept NULL values
 
 
 Thus you should create all tables, marking key and foreign key constraints in the
@@ -244,7 +246,9 @@ Following the system specification, create these views:
        and branch (if any) they are following.
 - View: ``FinishedCourses(ssn,name,courseCode,courseName,grade)``
        For all students, all finished courses, along with their names, grades
-       (grade ``'U'``, ``'3'``, ``'4'`` or ``'5'``) and number of credits.
+       (grade ``'U'``, ``'3'``, ``'4'`` or ``'5'``) and number of
+       credits. The type of the grade should be a character type,
+       e.g. ``TEXT``.
 - View: ``Registrations(courseCode,courseName,ssn,studentName,status)``
        All registered and waiting students for all courses, along with their
        waiting status (``'registered'`` or ``'waiting'``).
@@ -268,7 +272,8 @@ Following the system specification, create these views:
        -  ``creditsResearch``: the number of credits they have taken in courses that are
           classified as research courses.
        -  ``seminarsRead``: the number of seminar courses they have read.
-       -  ``status``: whether or not they qualify for graduation.
+       -  ``status``: whether or not they qualify for graduation. The
+          SQL type of this field should be ``BOOLEAN`` (i.e. ``TRUE`` or ``FALSE``).
 
 
 **Deliverables**: For task 1, you should submit the following files through Fire

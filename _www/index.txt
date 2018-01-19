@@ -9,9 +9,10 @@ Spring Term 2018
 ''<A HREF="https://groups.google.com/forum/#!forum/tda357-vt2018">GoogleGroup</A>'' |
 [LectureNotes http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/notes/db-notes.pdf] |
 [TimeEdit https://se.timeedit.net/web/chalmers/db1/public/ri1X50gQ2560YvQQ05Z6278Y0Zy6007311Y54Q085.html] |
-[Assignment plab]  |
+[Assignment ./lab]  |
 [Fire https://databases-lp3-18.frs.cse.chalmers.se/] |
-[LastYear http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/]
+[LastYear http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/] |
+[PostgresTips http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/pgtips/]
 
 Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/
 ''</center>''
@@ -20,6 +21,7 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
+- January 19: Assignment 1 ("Lab PM") published [here ./lab]. Small edits may appear.
 - January 17: Some date changes in lectures, exercises, and labs. Should be final now. Also made a new version of notes available.
 - January 15: Updated the schedule of lectures, exercises, and labs. Updated Lab PM and Notes coming soon.
 - January 8: First version of Spring Term 2018 web page
@@ -71,7 +73,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 
 <TR style="background-color: orange"><TD>30/1 Tue</TD><TD>LAB 1 DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a> SQL tables and queries</TD>
+<TD><a href="./lab">Lab PM</a> SQL tables and queries</TD>
 </TR>
 
 <TR style="background-color: yellow"><TD>31/1 Wed</TD>
@@ -97,7 +99,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 
 <TR style="background-color: orange"><TD>16/2 Fri</TD><TD>LAB 2 DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a> ER and FD</TD>
+<TD><a href="./lab">Lab PM</a> ER and FD</TD>
 </TR>
 
 
@@ -117,7 +119,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 
 <TR style="background-color: orange"><TD>27/2 Tue</TD><TD>LAB 3 DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a> Triggers</TD>
+<TD><a href="./lab">Lab PM</a> Triggers</TD>
 </TR>
 
 <TR style="background-color: yellow"><TD>28/2 Wed</TD><TD>Exercise 5, JDBC</TD>
@@ -139,7 +141,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 
 <TR style="background-color: orange"><TD>13/3 Tue</TD><TD>LAB 4 DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a>JDBC</TD>
+<TD><a href="./lab">Lab PM</a>JDBC</TD>
 </TR>
 
 <TR style="background-color: red"><TD>16/3 Fri</TD><TD>Exam</TD>
@@ -148,7 +150,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 
 
 <TR style="background-color: orange"><TD>18/3 Sun</TD><TD>LAB RESUBMISSION DEADLINE</TD>
-<TD><a href="lpm">Lab PM</a></TD>
+<TD><a href="./lab">Lab PM</a></TD>
 </TR>
 
 </TABLE>
@@ -234,8 +236,7 @@ In addition, there is a "Lab 0", which consists of just registering the group.
 - deadline 13/3: Lab 4: Java application
 
 
-The specification ("lab PM") is soon there.
-%[here ./lab/dblab.pdf]
+The specification ("lab PM") is [here ./lab]
 
 Reporting is done via [Fire https://databases-lp3-18.frs.cse.chalmers.se/]
 Before reporting assignments 1 and 2, you must run your program through a test suite.
@@ -315,7 +316,9 @@ Exam review: 20 April at 14-16 in EDIT room 6106
 
 PostgreSQL
 https://www.postgresql.org/
-(the main software, used in assignments)
+(the main software, used in assignments).
+Practical help about using the school's Postgres installation can be found in these
+[PostgresTips http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/pgtips/].
 
 Query Converter, available as a web application soon.
 Source: https://github.com/GrammaticalFramework/gf-contrib/tree/master/query-converter

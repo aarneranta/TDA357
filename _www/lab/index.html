@@ -2,10 +2,10 @@
 <HTML>
 <HEAD>
 <META NAME="generator" CONTENT="http://txt2tags.org">
-<TITLE>Database Programming Assignment ("Lab")</TITLE>
+<TITLE>Database Programming Assignment ("Lab PM")</TITLE>
 </HEAD><BODY BGCOLOR="white" TEXT="black">
 <CENTER>
-<H1>Database Programming Assignment ("Lab")</H1>
+<H1>Database Programming Assignment ("Lab PM")</H1>
 <FONT SIZE="4"><I>Chalmers/GU TDA357/DIT620</I></FONT><BR>
 <FONT SIZE="4">LP3, 2018</FONT>
 </CENTER>
@@ -28,7 +28,7 @@
 <HR NOSHADE SIZE=1>
 <P></P>
 <P>
-<I>Draft, modified by Aarne Ranta from earlier years' specifications</I>
+<I>Modified by Aarne Ranta from earlier years' specifications by many other teachers at Chalmers and GU</I>
 </P>
 
 <A NAME="toc1"></A>
@@ -256,6 +256,8 @@ The schema is explained abstractly in this file:
 <center>
 <A HREF="./task1.txt">Abstract schema for database task 1</A>
 </center>
+</P>
+<P>
 You should implement the schema with <CODE>CREATE TABLE</CODE> statements that
 </P>
 
@@ -263,6 +265,7 @@ You should implement the schema with <CODE>CREATE TABLE</CODE> statements that
 <LI>use exactly the given table and attribute names
 <LI>express the same primary key, foreign key, and uniqueness constraints
 <LI>use reasonable types (not expressed in the abstract schema, but should be obvious from the domain description)
+<LI>no column may accept NULL values
 </UL>
 
 <P>
@@ -316,7 +319,9 @@ Following the system specification, create these views:
        and branch (if any) they are following.
 <LI>View: <CODE>FinishedCourses(ssn,name,courseCode,courseName,grade)</CODE>
        For all students, all finished courses, along with their names, grades
-       (grade <CODE>'U'</CODE>, <CODE>'3'</CODE>, <CODE>'4'</CODE> or <CODE>'5'</CODE>) and number of credits.
+       (grade <CODE>'U'</CODE>, <CODE>'3'</CODE>, <CODE>'4'</CODE> or <CODE>'5'</CODE>) and number of
+       credits. The type of the grade should be a character type,
+       e.g. <CODE>TEXT</CODE>.
 <LI>View: <CODE>Registrations(courseCode,courseName,ssn,studentName,status)</CODE>
        All registered and waiting students for all courses, along with their
        waiting status (<CODE>'registered'</CODE> or <CODE>'waiting'</CODE>).
@@ -340,7 +345,8 @@ Following the system specification, create these views:
        -  <CODE>creditsResearch</CODE>: the number of credits they have taken in courses that are
           classified as research courses.
        -  <CODE>seminarsRead</CODE>: the number of seminar courses they have read.
-       -  <CODE>status</CODE>: whether or not they qualify for graduation.
+       -  <CODE>status</CODE>: whether or not they qualify for graduation. The
+          SQL type of this field should be <CODE>BOOLEAN</CODE> (i.e. <CODE>TRUE</CODE> or <CODE>FALSE</CODE>).
 </UL>
 
 <P>

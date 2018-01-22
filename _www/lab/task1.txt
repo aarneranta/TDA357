@@ -16,9 +16,9 @@ Branch(_name_, _program_)
     program -> Program.name
 
 BelongsTo(_student_, branch, program)
-    student -> student.ssn
+    student -> Student.ssn
     (student, program) -> Student.(ssn, program)
-    (branch, brogram) -> Branch.(name, program)
+    (branch, program) -> Branch.(name, program)
 
 Course(_code_, name, credits, department)
     department -> Department.name
@@ -30,7 +30,7 @@ Prerequisite(_course_, _prerequisite_)
 Classification(_name_)
 
 Classified(_course_, _classification_)
-    course -> Course.name
+    course -> Course.code
     classification -> Classification.name
 
 MandatoryProgram(_course_, _program_)

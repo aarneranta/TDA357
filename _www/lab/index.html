@@ -314,46 +314,42 @@ Following the system specification, create these views:
 </P>
 
 <UL>
-<LI>View: <CODE>StudentsFollowing(ssn,name,program,branch)</CODE>
-       For all students, their basic information (name etc.), and the programme
-       and branch (if any) they are following.
-<LI>View: <CODE>FinishedCourses(ssn,name,courseCode,courseName,grade)</CODE>
-       For all students, all finished courses, along with their names, grades
+<LI>View: <CODE>StudentsFollowing(student, program, branch)</CODE>
+       For all students, their SSN, the program and the branch (if any) they are following.
+       The <CODE>branch</CODE> column is the only column in any of the views that is allowed to be NULLABLE.
+<LI>View: <CODE>FinishedCourses(student, course, grade, credits)</CODE>
+       For all students, all finished courses, along with their codes, grades
        (grade <CODE>'U'</CODE>, <CODE>'3'</CODE>, <CODE>'4'</CODE> or <CODE>'5'</CODE>) and number of
        credits. The type of the grade should be a character type,
        e.g. <CODE>TEXT</CODE>.
-<LI>View: <CODE>Registrations(courseCode,courseName,ssn,studentName,status)</CODE>
+<LI>View: <CODE>Registrations(student, course, status)</CODE>
        All registered and waiting students for all courses, along with their
        waiting status (<CODE>'registered'</CODE> or <CODE>'waiting'</CODE>).
-<LI>View: <CODE>PassedCourses(ssn,courseCode,credits)</CODE>
+<LI>View: <CODE>PassedCourses(student, course, credits)</CODE>
        For all students, all passed courses, i.e. courses finished with a grade
        other than 'U', and the number of credits for those courses. This view
        is intended as a helper view towards the <CODE>PathToGraduation</CODE> view (and
        for task 4), and will not be directly used by your application.
-<LI>View: <CODE>UnreadMandatory(ssn,courseCode)</CODE>
+<LI>View: <CODE>UnreadMandatory(student, course)</CODE>
        For all students, the mandatory courses (branch and programme) they have
        not yet passed. This view is intended as a helper view towards the
        <CODE>PathToGraduation</CODE> view, and will not be directly used by your
        application.
-<LI>View: <CODE>PathToGraduation(ssn,name,creditsTaken,coursesToTake,creditsMath,creditsResearch,seminarsRead,status)</CODE>
+<LI>View: <CODE>PathToGraduation(student, totalCredits, mandatoryLeft, mathCredits, researchCredits, seminarCourses, status)</CODE>
        For all students, their path to graduation, i.e. a view with columns for
-       -  <CODE>creditsTaken</CODE>: the number of credits they have taken.
-       -  <CODE>coursesToTake</CODE>: the number of mandatory courses they have yet to read (branch
-          or programme).
-       -  <CODE>creditsMath</CODE>: the number of credits they have taken in courses that are
-          classified as math courses.
-       -  <CODE>creditsResearch</CODE>: the number of credits they have taken in courses that are
-          classified as research courses.
-       -  <CODE>seminarsRead</CODE>: the number of seminar courses they have read.
-       -  <CODE>status</CODE>: whether or not they qualify for graduation. The
-          SQL type of this field should be <CODE>BOOLEAN</CODE> (i.e. <CODE>TRUE</CODE> or <CODE>FALSE</CODE>).
-</UL>
-
-<P>
+       -  <CODE>ssn</CODE>: the student's SSN.
+       -  <CODE>totalCredits</CODE>: the number of credits they have taken.
+       -  <CODE>mandatoryLeft</CODE>: the number of courses that are mandatory for a branch or a program they have yet to read.
+       -  <CODE>mathCredits</CODE>: the number of credits they have taken in courses that are classified as math courses.
+       -  <CODE>researchCredits</CODE>: the number of credits they have taken in courses that are classified as research courses.
+       -  <CODE>seminarsCourses</CODE>: the number of seminar courses they have read.
+       -  <CODE>status</CODE>: whether or not they qualify for graduation. The SQL type of this field should be
+          <CODE>BOOLEAN</CODE> (i.e. <CODE>TRUE</CODE> or <CODE>FALSE</CODE>).
+<P></P>
+Make sure that your views use the right names of columns! Use <CODE>AS</CODE> to name a column.
+<P></P>
 <B>Deliverables</B>: For task 1, you should submit the following files through Fire
-</P>
-
-<UL>
+<P></P>
 <LI><CODE>tables.sql</CODE>: your SQL code for creating the tables.
 <LI><CODE>insert.sql</CODE>: your SQL code containing the insert statements for the data.
 <LI><CODE>views.sql</CODE>: your SQL code for creating the listed views.

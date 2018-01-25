@@ -12,7 +12,8 @@ Spring Term 2018
 [Assignment ./lab]  |
 [Fire https://databases-lp3-18.frs.cse.chalmers.se/] |
 [LastYear http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/] |
-[PostgresTips http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/pgtips/]
+[PostgresTips http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/pgtips/] |
+[QueryConverter http://www.grammaticalframework.org/qconv/]
 
 Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA357/VT2018/
 ''</center>''
@@ -21,6 +22,7 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
+- Janury 25: [Query Converter http://www.grammaticalframework.org/qconv/] now available on the web.
 - January 19: Assignment 1 ("Lab PM") published [here ./lab]. Small edits may appear.
 - January 17: Some date changes in lectures, exercises, and labs. Should be final now. Also made a new version of notes available.
 - January 15: Updated the schedule of lectures, exercises, and labs. Updated Lab PM and Notes coming soon.
@@ -61,7 +63,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 
 <TR style="background-color: yellow"><TD>24/1 Wed</TD><TD>Exercise 1, SQL</TD>
-<TD></TD>
+<TD><a href="tutorials/ex1-sql.pdf">Questions</a> <a href="tutorials/sol1-sql.pdf">Solutions</a></TD>
 </TR>
 
 <TR><TD>25/1 Thu</TD><TD>Lecture 4, Entity-Relationship modelling</td>
@@ -320,7 +322,8 @@ https://www.postgresql.org/
 Practical help about using the school's Postgres installation can be found in these
 [PostgresTips http://www.cse.chalmers.se/edu/year/2017/course/TDA357/HT2017/pgtips/].
 
-Query Converter, available as a web application soon.
+[QueryConverter http://www.grammaticalframework.org/qconv/] web application.
+Support for E-R diagrams, functional dependencies, normalization, and relational algebra.
 Source: https://github.com/GrammaticalFramework/gf-contrib/tree/master/query-converter
 This is experimental teaching software developed to accompany the notes.
 

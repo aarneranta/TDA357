@@ -63,7 +63,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TD>22/1 Mon</TD><TD>Lecture 3, SQL 2</TD><TD>Notes 2, Book 6</TD>
 </TR>
 
-<TR style="background-color: yellow"><TD>24/1 Wed</TD><TD>Exercise 1, SQL</TD>
+<TR style="background-color: yellow"><TD>24/1 Wed</TD><TD>Exercise 1, SQL (Nickey)</TD>
 <TD><a href="tutorials/ex1-sql.pdf">Questions</a> <a href="tutorials/sol1-sql.pdf">Solutions</a></TD>
 </TR>
 
@@ -79,9 +79,8 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TD><a href="./lab">Lab PM</a> SQL tables and queries</TD>
 </TR>
 
-<TR style="background-color: yellow"><TD>31/1 Wed</TD>
-<TD>Exercise 2, Entity-Relationship modelling</TD>
-<TD></TD>
+<TR style="background-color: yellow"><TD>31/1 Wed</TD><TD>Exercise 2, Entity-Relationship modelling (Nickey)</TD>
+<TD><a href="tutorials/ex2-er.pdf">Questions</a> </TD>
 </TR>
 
 <TR><TD>1/2 Thu</TD><TD>Lecture 6, Functional dependencies and normal forms</TD>
@@ -93,7 +92,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 <TR>
 
-<TR style="background-color: yellow"><TD>14/2 Wed</TD><TD>Exercise 3, Theory topics: relations and dependencies</TD>
+<TR style="background-color: yellow"><TD>14/2 Wed</TD><TD>Exercise 3, Theory topics: relations and dependencies (Natalia)</TD>
 <TD></TD>
 </TR>
 
@@ -114,7 +113,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TD>Notes 2,7; Book 6,8,10</TD>
 </TR>
 
-<TR style="background-color: yellow"><TD>21/2 Wed</TD><TD>Exercise 4, Constraints and triggers</TD><TD></TD>
+<TR style="background-color: yellow"><TD>21/2 Wed</TD><TD>Exercise 4, Constraints and triggers (Naga)</TD><TD></TD>
 </TR>
 
 <TR><TD>26/2 Mon</TD><TD>Lecture 11, Alternative data models</TD>
@@ -125,7 +124,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TD><a href="./lab">Lab PM</a> Triggers</TD>
 </TR>
 
-<TR style="background-color: yellow"><TD>28/2 Wed</TD><TD>Exercise 5, JDBC</TD>
+<TR style="background-color: yellow"><TD>28/2 Wed</TD><TD>Exercise 5, JDBC (Alejandro)</TD>
 <TD></TD>
 </TR>
 
@@ -138,8 +137,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TD>Notes, Book</TD>
 </TR>
 
-<TR style="background-color: yellow"><TD>8/3 Wed</TD>
-<TD>Exercise 6, Alternative data models</TD>
+<TR style="background-color: yellow"><TD>8/3 Wed</TD><TD>Exercise 6, Alternative data models</TD>
 <TD></TD>
 </TR>
 

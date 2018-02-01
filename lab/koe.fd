@@ -1,0 +1,14 @@
+progname progabbr deptname deptabbr ssn studname login branch coursecode coursename credits classifname grade limcode seats position
+
+progname -> progabbr
+deptname -> deptabbr
+deptabbr -> deptname
+ssn -> studname login progname branch
+login -> ssn
+coursecode -> coursename credits deptname
+ssn coursecode -> grade
+limcode -> coursecode seats
+student coursecode -> position
+position coursecode -> ssn
+
+

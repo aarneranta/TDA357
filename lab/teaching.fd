@@ -1,0 +1,8 @@
+course chalmers gu credits period teacher title students day time hall places
+
+chalmers -> course gu credits
+gu -> chalmers
+chalmers period -> teacher students
+teacher -> title
+chalmers period day -> time hall
+hall -> places

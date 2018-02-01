@@ -22,6 +22,7 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
+- February 1: Lecture notes Chapter 5 needs some more work to comply with the on-going course. In the meantime, you can consult the [standard cheatsheet notes/db-cheatsheet.pdf] for concise definitions of the dependency concepts. 
 - January 26: Guest speakers announced in the lecture schema: Jyrki Nummenmaa (Tampere), Johan Buratti (Spotify). Also notice that there are no lectures on February 8 and 12! 
 - Janury 25: [Query Converter http://www.grammaticalframework.org/qconv/] now available on the web.
 - January 19: Assignment 1 ("Lab PM") published [here ./lab]. Small edits may appear.
@@ -80,7 +81,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 </TR>
 
 <TR style="background-color: yellow"><TD>31/1 Wed</TD><TD>Exercise 2, Entity-Relationship modelling (Nickey)</TD>
-<TD><a href="tutorials/ex2-er.pdf">Questions</a> </TD>
+<TD><a href="tutorials/ex2-er.pdf">Questions</a> <a href="tutorials/sol2-er.pdf">Solutions</a></TD>
 </TR>
 
 <TR><TD>1/2 Thu</TD><TD>Lecture 6, Functional dependencies and normal forms</TD>

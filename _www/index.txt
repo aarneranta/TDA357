@@ -22,6 +22,7 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
+- February 5: Lecture notes Chapter 5 is now adapted to the course. The * marked sections are not obligatory.
 - February 2: Lab 2 published, as a new chapter in the [Lab PM ./lab]. It will be explained on Monday's lecture (5 February).
 - February 1: Lecture notes Chapter 5 needs some more work to comply with the on-going course. In the meantime, you can consult the [standard cheatsheet notes/db-cheatsheet.pdf] for concise definitions of the dependency concepts. 
 - January 26: Guest speakers announced in the lecture schema: Jyrki Nummenmaa (Tampere), Johan Buratti (Spotify). Also notice that there are no lectures on February 8 and 12! 

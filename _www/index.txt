@@ -96,6 +96,7 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TR>
 
 <TR style="background-color: yellow"><TD>14/2 Wed</TD><TD>Exercise 3, Theory topics: relations and dependencies (Natalia)</TD>
+<TD><a href="tutorials/ex3-theory.pdf">Questions</a></TD>
 <TD></TD>
 </TR>
 

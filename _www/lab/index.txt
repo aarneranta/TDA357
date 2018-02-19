@@ -396,8 +396,68 @@ In the simplest case, you can just say that the schema is exactly the same. You 
 
 
 
+=Task 3: Triggers=
+
+When your tables and views are implemented in Task 1, the next task is to
+create two triggers to handle some key issues in registration and
+unregistration.
+Here is a piece of code to get you started on the first trigger:
+
+[Postgresql trigger example http://www.postgresql.org/docs/current/static/plpgsql-trigger.html#PLPGSQL-TRIGGER-EXAMPLE]
+
+But first, you should define one more view that
+can be used by your triggers, and your application in Task 1:
+
+- View ``CourseQueuePositions(course,student,place)``:
+    For all students who are in the queue for a course, the course code, the
+    student's identification number, and the student's current place in the
+    queue (the student who is first in a queue will have place "1" in that
+    queue, etc.).
+
+When a student tries to register for a course, it is possible that the course
+is already full, in which case the student should be put in the waiting list
+for that course. When a student unregisters, it might be that there is now room
+for some student who is in the waiting list, and who should then be registered
+for the course instead. Such things are typically handled via triggers. You
+should write two triggers:
+
++ When a student tries to register for a course that is full, that student is
+   added to the waiting list for the course. Be sure to check that the student
+   may actually register for the course before adding to either list, if it may
+   not you should raise an error (use
+   [RAISE EXCEPTION http://www.postgresql.org/docs/current/static/plpgsql-errors-and-messages.html]).
+   **Hint**: There are several requirements for registration stated in the domain
+   description, and some implicit ones like that a student can not be both
+   waiting and registered for the same course at the same time.
++ When a student unregisters from a course if the student was properly
+   registered and not only on the waiting list, the first student (if any) in
+   the waiting list should be registered for the course instead.  **Note**: this
+   should only be done if there is actually room on the course (the course
+   might have been over-full due to an administrator overriding the restriction
+   and adding students directly).
+
+You need to write the triggers on the view ``Registrations`` instead of on the
+tables themselves (the view was built in task 1 above). (One reason for this is
+that we "pretend" that you only have the privileges listed under Task 4, which
+means you cannot insert data into, or delete data from, the underlying tables
+directly. But even if we lift this restriction, there is another reason for not
+defining these triggers on the underlying tables - can you figure out why?)
+
+**Testing**. we will prepare test cases (in SQL) for testing both insertion and deletion to check
+the triggers work. These tests will be applied automatically in Fire
+when the lab registration is open.
 
 
+**Deliverables**. For task 4, you should hand in the following files:
+
+    - ``triggers.sql``: SQL code for creating the two triggers.
+    - ``setup.sql``: SQL code that sets up your database for testing the
+      triggers. This will normally be the concatenation of files
+      ``tables.sql``, ``insert.sql`` and ``views.sql`` from Task 1.
+      We must
+      be able to test your triggers by executing the files ``setup.sql``
+      and ``triggers.sql``, in that order.
 
 
+**Make sure that PostgreSQL can execute your files before you hand them in.**
 

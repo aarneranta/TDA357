@@ -27,6 +27,7 @@
     <LI><A HREF="#toc9">Functional dependencies</A>
     </UL>
   <LI><A HREF="#toc10">Task 3: Triggers</A>
+  <LI><A HREF="#toc11">Task 4: Front end application in JDBC</A>
   </UL>
 
 <P></P>
@@ -573,7 +574,7 @@ when the lab registration is open.
 </OL>
 
 <P>
-<B>Deliverables</B>. For task 4, you should hand in the following files:
+<B>Deliverables</B>. For task 3, you should hand in the following files:
 </P>
 
     <UL>
@@ -590,6 +591,181 @@ when the lab registration is open.
 <B>Make sure that PostgreSQL can execute your files before you hand them in.</B>
 </P>
 
+<A NAME="toc11"></A>
+<H1>Task 4: Front end application in JDBC</H1>
+
+<P>
+<B>Preliminary version: to be finalized by 3 March</B>
+</P>
+<P>
+The last part of this assignment is to write an application that students can
+use to communicate with your database. This application should be a Java
+program that uses JDBC to connect to the PostgreSQL database to request and
+insert the proper data.
+</P>
+<P>
+To your help when writing your application we provide you with a stub file that
+contains the code for connecting to PostgreSQL on the local system. It also
+contains hooks for the three operating modes of the application, and this is
+where you should insert your code. The idea is that you should not need to
+focus so much on the pure Java parts of the application, but rather get
+straight down to business with the database-interfacing code.
+</P>
+<P>
+The stub file is here: <A HREF="StudentPortal.java"><CODE>StudentPortal.java</CODE></A>.
+</P>
+<P>
+The intended behavior of the program is that you use it from the command line,
+giving some student identification number as an argument (what exactly that is
+depends on your design). This corresponds to the student "logging on" to the
+portal. Once logged on, the student can choose one of the three modes
+"Information", "Register" or "Unregister". If the first is chosen, all
+information for that student should be printed.  Exactly what information must
+be printed is given by the system requirements specified above. If one of the
+latter modes are chosen, the student will be prompted for a course to register
+to or unregister from, and the application should perform the requested
+operation and print the result (success, failure).
+</P>
+<P>
+The stub file can be compiled and run as it is, only nothing will happen
+in any of the modes. Your task is thus to fill in the actual logic of these
+three tasks.
+</P>
+<P>
+Running your application could look like this:
+</P>
+
+<PRE>
+      $&gt; java StudentPortal 123456-7890
+      Welcome!
+      Please choose a mode of operation:
+      ? &gt; i
+      Information for student 123456-7890
+      -------------------------------------
+      Name: Emilia Emilsson
+      Student ID: emem
+      Line: Information Technology (IT)
+      Branch: Systems Development
+  
+      Read courses (name (code), credits: grade):
+       Set Theory (MAT050), 5p: 5
+       Functional Programming (TDA450), 10p: 5
+       Object-Oriented Systems Development (TDA590), 10p:  4
+  
+      Registered courses (name (code): status):
+       Databases (TDA356): registered
+       Algorithms (TIN090): waiting as nr 3
+  
+      Seminar courses taken: 0
+      Math credits taken: 5
+      Research credits taken: 0
+      Total credits taken: 25
+      Fulfills the requirements for graduation: no
+      -------------------------------------
+  
+      Please choose a mode of operation:
+      ? &gt; r TDA350
+      You are now successfully registered to course TDA350 Cryptograhy!
+  
+      Please choose a mode of operation:
+      ? &gt; r TDA381
+      Course TDA381 Concurrent Programming is full, you are put in the
+      waiting list.
+  
+      Please choose a mode of operaion:
+      ? &gt; quit
+      Goodbye!
+      $&gt;
+</PRE>
+
+<P>
+Note that the exact formatting is only a suggestion: you may choose to format
+your output differently as long as you give the proper information back to the
+user.
+</P>
+<P>
+To get access to the PostgreSQL jdbc drivers from your application, you should
+download it from <A HREF="https://jdbc.postgresql.org">https://jdbc.postgresql.org</A> and import it into your java
+CLASSPATH.
+</P>
+<P>
+Alternatively you can import the file into an Eclipse project if you are using
+it.
+</P>
+<P>
+Your student application should behave as if it has <B>only</B> the following
+privileges:
+</P>
+
+<UL>
+<LI><CODE>SELECT ON Courses</CODE>
+<LI><CODE>SELECT ON StudentsFollowing</CODE>
+<LI><CODE>SELECT ON FinishedCourses</CODE>
+<LI><CODE>SELECT ON Registrations</CODE>
+<LI><CODE>SELECT ON CourseQueuePositions</CODE>
+<LI><CODE>SELECT ON PathToGraduation</CODE>
+<LI><CODE>INSERT ON Registrations</CODE>
+<LI><CODE>DELETE ON Registrations</CODE>
+</UL>
+
+<P>
+We will check your submitted code to ensure that you adhere to these
+privileges, even though we cannot get the system to enforce them automatically.
+</P>
+<P>
+Deliverables: 
+</P>
+
+<UL>
+<LI>file <CODE>StudentPortal.java</CODE> with your additions, submitted via Fire
+<LI>oral demonstration to a teacher in a lab session
+</UL>
+
+<P>
+As in the previous tasks, some automated tests are performed by Fire.
+In addition, you must come to one of the supervision sessions and demonstrate your
+    running application, and we will accept or reject it on the spot
+    (pending the check of the submitted code for authority violations). As
+    you probably realize, if all of you wait until the last Friday we will
+    quite simply not have time for everyone, so come early!
+</P>
+<P>
+Here is a list of what we will test your application for:
+</P>
+
+<OL>
+<LI>List info for a student.
+<LI>Register the student for an unrestricted course, and show that they end
+       up registered (show info again).
+<LI>Register the same student for the same course again, and show that the
+       program doesn't crash, and that the student gets an error message.
+<LI>Unregister the student from the course, and then unregister again from
+       the same course. Show that the student is unregistered.
+<LI>Register the student for a course that they don't have the prerequisites
+       for, and show that the registration doesn't go through.
+<LI>Unregister the student from a restricted course that they are registered
+       to, and which has at least two students in the queue.  Register again to
+       the same course and show that the student gets the correct (last)
+       position in the waiting list.
+<LI>Register, unregister and re-register the same student for the
+       same restricted course, and show that the student is first removed and
+       then ends up in the same position as before (last).
+<LI>Finally, unregister a student from an <B>overfull</B> course, i.e. one with
+       more students registered than there are places on the course (you need
+       to set this situation up in the database directly). Show that no student
+       was moved from the queue to being registered as a result.
+</OL>
+
+<P>
+Ensure that the data you have put into your system can handle all these
+    cases. Please prepare before you ask us to check your application, so
+    that running through these cases will be smooth. Please fill the following 
+    form before demonstration: <A HREF="./demo-form.pdf">demo form</A>.
+</P>
+<P>
+<B>You must demo your working project before or on the last lab session.</B>
+</P>
+
 <!-- html code generated by txt2tags 2.6 (http://txt2tags.org) -->
-<!-- cmdline: txt2tags -\-toc -thtml index.txt -->
+<!-- cmdline: txt2tags -thtml -\-toc index.txt -->
 </BODY></HTML>

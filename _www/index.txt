@@ -22,7 +22,8 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
-- March 2: Lab 4 published, as a new chapter in the [Lab PM ./lab]. 
+- March 2: Lab 4 published, as a new chapter in the [Lab PM ./lab].
+  Extra lab session for demos on 12 and 15 March (usual times).
 - February 19: Lab 3 published, as a new chapter in the [Lab PM ./lab]. 
 - February 5: Lecture notes Chapter 5 is now adapted to the course. The * marked sections are not obligatory.
 - February 2: Lab 2 published, as a new chapter in the [Lab PM ./lab]. It will be explained on Monday's lecture (5 February).

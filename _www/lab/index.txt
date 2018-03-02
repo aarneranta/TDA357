@@ -466,8 +466,6 @@ when the lab registration is open.
 
 =Task 4: Front end application in JDBC=
 
-**Preliminary version: to be finalized by 3 March**
-
 The last part of this assignment is to write an application that students can
 use to communicate with your database. This application should be a Java
 program that uses JDBC to connect to the PostgreSQL database to request and
@@ -549,11 +547,12 @@ download it from https://jdbc.postgresql.org and import it into your java
 CLASSPATH.
 
 Alternatively you can import the file into an Eclipse project if you are using
-it.
+Eclipse.
 
 Your student application should behave as if it has **only** the following
 privileges:
-- ``SELECT ON Courses``
+- ``SELECT ON Course``
+- ``SELECT ON Student``
 - ``SELECT ON StudentsFollowing``
 - ``SELECT ON FinishedCourses``
 - ``SELECT ON Registrations``
@@ -569,14 +568,25 @@ privileges, even though we cannot get the system to enforce them automatically.
 Deliverables: 
 - file ``StudentPortal.java`` with your additions, submitted via Fire
 - oral demonstration to a teacher in a lab session
+- filled [demo form ./demo-form.pdf] shown at the oral demonstration
 
 
-As in the previous tasks, some automated tests are performed by Fire.
-In addition, you must come to one of the supervision sessions and demonstrate your
+
+This time, no automated tests are performed by Fire.
+We will have personal grading instead:
+you must come to one of the supervision sessions and demonstrate your
     running application, and we will accept or reject it on the spot
-    (pending the check of the submitted code for authority violations). As
-    you probably realize, if all of you wait until the last Friday we will
-    quite simply not have time for everyone, so come early!
+    (pending the check of the submitted code for authority
+    violations).
+
+All lab sessions starting from Monday 5 March are available for
+grading, which should take around 10 minutes per group.
+In addition, we will arrange two extra lab sessions in the exam week
+(Monday and Thursday).
+
+As
+    you probably realize, if all of you wait until the last session, we will
+    quite simply not have time for everyone, so come as early as possible!
 
 
 Here is a list of what we will test your application for:

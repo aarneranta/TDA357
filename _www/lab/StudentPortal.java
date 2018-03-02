@@ -14,6 +14,7 @@ import java.io.*;  // Reading user input.
 public class StudentPortal
 {
     /* TODO Here you should put your database name, username and password */
+    static final String DATABASE = "jdbc:postgresql://ate.ita.chalmers.se/";
     static final String USERNAME = "";
     static final String PASSWORD = "";
 
@@ -33,7 +34,7 @@ public class StudentPortal
     {
         try {
             Class.forName("org.postgresql.Driver");
-            String url = "jdbc:postgresql://ate.ita.chalmers.se/";
+            String url = DATABASE;
             Properties props = new Properties();
             props.setProperty("user",USERNAME);
             props.setProperty("password",PASSWORD);

@@ -22,6 +22,10 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
+- March 7: exam place published: SB Multisal (Samhällsbyggnadshus),
+  Sven Hultins gata 8. Your own
+  cheat sheet permitted (double-sided A4), but a standard one will
+  also be distributed.
 - March 2: Lab 4 published, as a new chapter in the [Lab PM ./lab].
   Extra lab session for demos on 12 and 15 March (usual times).
 - February 19: Lab 3 published, as a new chapter in the [Lab PM ./lab]. 
@@ -144,8 +148,8 @@ Book = [course book http://catalogue.pearsoned.co.uk/educator/product/Database-S
 <TD>Notes, Book</TD>
 </TR>
 
-<TR style="background-color: yellow"><TD>8/3 Wed</TD><TD>Exercise 6, Alternative data models</TD>
-<TD></TD>
+<TR style="background-color: yellow"><TD>7/3 Wed</TD><TD>Exercise 6, XML</TD>
+<TD><a href="https://github.com/agomezl/XML-exercises">Questions</a></TD>
 </TR>
 
 <TR style="background-color: orange"><TD>13/3 Tue</TD><TD>LAB 4 DEADLINE</TD>
@@ -311,13 +315,19 @@ Date: Friday 16 March
 
 Time: 8:30 - 12:30
 
-Place: TBA (Johanneberg)
+Place: SB Multisal (Samhällsbyggnadshus),
+  Sven Hultins gata 8. Your own
+  cheat sheet permitted (double-sided A4), but a standard one will
+  also be distributed.
 
 The exam has a similar structure as these [old exams http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/exam/index.html].
 
-The exam questions contain a [standard cheatsheet notes/db-cheatsheet.pdf], which is a reference card covering all E-R, SQL, relational algebra, and XML syntax that is needed in the exam.
+The exam questions contain a [standard cheatsheet
+notes/db-cheatsheet.pdf], which is a reference card covering all E-R,
+SQL, relational algebra, and XML syntax that is needed in the exam.
+Your own cheat sheet is also permitted (a hand-written double-sided A4).
 
-Exam review: 20 April at 14-16 in EDIT room 6106
+Exam review: TBA.
 
 
 =Software=

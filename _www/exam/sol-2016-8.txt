@@ -1,0 +1,251 @@
+CREATE TABLE Teams (
+name TEXT PRIMARY KEY
+) ;
+
+CREATE TABLE Players (
+name TEXT,
+team TEXT REFERENCES Teams(name),
+number INT,
+place TEXT,
+CONSTRAINT name_team_key PRIMARY KEY (number,team)
+) ;
+
+CREATE TABLE Matches (
+team1 TEXT REFERENCES Teams(name),
+team2 TEXT REFERENCES Teams(name),
+playDate TEXT,
+goals1 INT,
+goals2 INT,
+CONSTRAINT teams_date_key PRIMARY KEY (team1,team2,playDate),
+CONSTRAINT no_self_match CHECK (team1 <> team2)
+) ;
+
+/*
+CREATE TABLE PlaysIn (
+team1 TEXT REFERENCES Matches(team1),
+team2 TEXT REFERENCES Matches(team2),
+playDate TEXT REFERENCES Matches(playDate),
+player INT REFERENCES Players(number),
+team TEXT REFERENCES Teams(name),
+CONSTRAINT player_in_key PRIMARY KEY (team1,team2,playDate,player,team),
+CONSTRAINT team_in_match CHECK (team = team1 OR team = team2)
+) ;
+--ERROR:  there is no unique constraint matching given keys for referenced table "matches"
+*/
+
+-- 3
+CREATE TABLE Pls (
+name TEXT,
+number INT,
+team TEXT,
+age INT,
+CONSTRAINT pls_key PRIMARY KEY (team,number)
+) ;
+
+INSERT INTO Pls VALUES ('A',1,'M',11) ;
+INSERT INTO Pls VALUES ('B',1,'N',12) ;
+INSERT INTO Pls VALUES ('C',2,'M',13) ;
+INSERT INTO Pls VALUES ('D',2,'N',14) ;
+
+-- 3a
+SELECT name,age FROM Pls WHERE team = 'M' and AGE < 12 ;
+
+-- 3b
+SELECT B.name FROM Pls AS A, Pls AS B WHERE A.team='M' AND A.number=1 AND B.age > A.age ;
+SELECT name FROM Pls WHERE age > (SELECT age FROM Pls WHERE team = 'M' and number = 1) ;
+
+-- 3c
+SELECT name, age FROM Pls AS P WHERE age > (SELECT AVG(age) FROM Pls WHERE team = P.team) ;
+
+
+
+
+-- 4
+CREATE TABLE PlayerAges (
+  name TEXT,
+  age INT
+  ) ;
+
+CREATE TABLE PlayerTeams (
+  name TEXT,
+  team TEXT,
+  number INT
+  ) ;
+
+INSERT INTO PlayerAges VALUES ('Arnold',11) ;
+INSERT INTO PlayerAges VALUES ('Ben',12) ;
+
+INSERT INTO PlayerTeams VALUES ('Ben','IFK',15) ;
+INSERT INTO PlayerTeams VALUES ('Cicero','GAS',16) ;
+INSERT INTO PlayerTeams VALUES ('Donald','GAS',12) ;
+
+/*
+exam2016_8=# SELECT * FROM PlayerAges NATURAL JOIN PlayerTeams ;
+ name | age | team | number 
+------+-----+------+--------
+ B    |  12 | M    |     15
+(1 row)
+
+exam2016_8=# SELECT * FROM PlayerAges FULL OUTER JOIN PlayerTeams USING (name) ;
+ name | age | team | number 
+------+-----+------+--------
+ A    |  11 |      |       
+ B    |  12 | M    |     15
+ C    |     | N    |     16
+ D    |     | N    |     12
+(4 rows)
+
+exam2016_8=# SELECT * FROM PlayerAges INNER JOIN PlayerTeams ON (age = number) ;
+ name | age | name | team | number 
+------+-----+------+------+--------
+ B    |  12 | D    | N    |     12
+(1 row)
+*/
+
+--5
+
+CREATE TABLE Matchs (
+team1 TEXT,
+team2 TEXT,
+goals1 INT,
+goals2 INT
+) ;
+
+INSERT INTO Matchs VALUES ('GAS','HACK',1,0) ;
+INSERT INTO Matchs VALUES ('IFC','GAS',2,2) ;
+INSERT INTO Matchs VALUES ('HACK','IFC',5,1) ;
+
+CREATE TABLE Results (
+team TEXT,
+matches INT,
+goals_scored INT,
+goals_conceded INT,
+points INT
+) ;
+
+CREATE OR REPLACE FUNCTION addMatch () RETURNS TRIGGER AS $$
+BEGIN
+  IF (NOT EXISTS (SELECT team FROM Results WHERE team = NEW.team1))
+    THEN INSERT INTO Results VALUES (NEW.team1,0,0,0,0) ;
+  END IF ;
+  IF (NOT EXISTS (SELECT team FROM Results WHERE team = NEW.team2))
+    THEN INSERT INTO Results VALUES (NEW.team2,0,0,0,0) ;
+  END IF ;
+  UPDATE Results
+    SET   matches = matches + 1
+    WHERE team = NEW.team1 OR team = NEW.team2 ;
+  UPDATE Results
+    SET   goals_scored = goals_scored + NEW.goals1, goals_conceded = goals_conceded + NEW.goals2
+    WHERE team = NEW.team1 ;
+  UPDATE Results
+    SET   goals_scored = goals_scored + NEW.goals2, goals_conceded = goals_conceded + NEW.goals1
+    WHERE team = NEW.team2 ;
+  UPDATE Results
+    SET points = points + 3
+    WHERE (team = NEW.team1 AND NEW.goals1 > NEW.goals2) OR (team = NEW.team2 AND NEW.goals2 > NEW.goals1) ;
+  UPDATE Results
+    SET points = points + 1
+    WHERE (team = NEW.team1 OR team = NEW.team2) AND NEW.goals1 = NEW.goals2 ;
+  RETURN NEW ;
+END
+$$ LANGUAGE 'plpgsql' ;
+
+CREATE TRIGGER addMatch_trigger
+  AFTER INSERT ON Matchs
+  FOR EACH ROW
+  EXECUTE PROCEDURE addMatch() ;
+
+CREATE VIEW VResults AS (
+SELECT team, COUNT(*) AS matches, SUM(goals_scored) AS goals_scored, SUM(goals_conceded) AS goals_conceded, SUM(points) AS points
+FROM
+   ((SELECT team1 AS team, goals1 as goals_scored, goals2 as goals_conceded, 3 as points
+    FROM Matchs
+    WHERE goals1 > goals2
+   )
+
+  UNION
+
+   (SELECT team1 AS team, goals1 as goals_scored, goals2 as goals_conceded, 1 as points
+    FROM Matchs
+    WHERE goals1 = goals2
+   )
+
+  UNION
+
+   (SELECT team1 AS team, goals1 as goals_scored, goals2 as goals_conceded, 0 as points
+    FROM Matchs
+    WHERE goals1 < goals2
+   )
+
+  UNION
+
+  (SELECT team2 AS team, goals2 as goals_scored, goals1 as goals_conceded, 3 as points
+   FROM Matchs
+   WHERE goals2 > goals1
+   )
+   
+  UNION
+
+  (SELECT team2 AS team, goals2 as goals_scored, goals1 as goals_conceded, 1 as points
+   FROM Matchs
+   WHERE goals2 = goals1
+   )
+   
+  UNION
+
+  (SELECT team2 AS team, goals2 as goals_scored, goals1 as goals_conceded, 0 as points
+   FROM Matchs
+   WHERE goals2 < goals1
+   )
+  )
+    AS MM
+  GROUP BY team
+
+) ;
+   
+
+CREATE VIEW VResultTable AS (
+  SELECT *
+  FROM VResults
+  ORDER BY (points, goals_scored - goals_conceded, points) DESC
+  ) ;
+
+CREATE VIEW ResultTable AS (
+  SELECT *
+  FROM Results
+  ORDER BY (points, goals_scored - goals_conceded, points) DESC
+  ) ;
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE FT [
+<!ELEMENT FT (Label,FT*)>
+<!ELEMENT Label (#PCDATA)>
+]>
+
+<FT>
+  <Label>CarlGustaf</Label>
+  <FT>
+    <Label>Victoria</Label>
+    <FT>
+      <Label>Estelle</Label>
+    </FT>
+    <FT>
+      <Label>Oscar</Label>
+    </FT>
+  </FT>
+  <FT>
+    <Label>CarlPhilip</Label>
+    <FT>
+      <Label>Alexander</Label>
+    </FT>
+  </FT>
+  <FT>
+    <Label>Madeleine</Label>
+    <FT>
+      <Label>Leonore</Label>
+    </FT>
+    <FT>
+      <Label>Nicolas</Label>
+    </FT>
+  </FT>
+</FT>
+

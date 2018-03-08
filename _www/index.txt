@@ -22,6 +22,7 @@ Official URL of this page: http://www.cse.chalmers.se/edu/year/2018/course/TDA35
 
 ===News and changes===
 
+- March 8: links to recent old exams (below in the Exam section)
 - March 7: exam place published: SB Multisal (Samhällsbyggnadshus),
   Sven Hultins gata 8. Your own
   cheat sheet permitted (double-sided A4), but a standard one will
@@ -320,7 +321,6 @@ Place: SB Multisal (Samhällsbyggnadshus),
   cheat sheet permitted (double-sided A4), but a standard one will
   also be distributed.
 
-The exam has a similar structure as these [old exams http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/exam/index.html].
 
 The exam questions contain a [standard cheatsheet
 notes/db-cheatsheet.pdf], which is a reference card covering all E-R,
@@ -328,6 +328,19 @@ SQL, relational algebra, and XML syntax that is needed in the exam.
 Your own cheat sheet is also permitted (a hand-written double-sided A4).
 
 Exam review: TBA.
+
+Old exams; these ones have the same format as ours:
+- [March 2017 questions exam/db-exam-2017-3.pdf]
+- ''<a href="https://docs.google.com/presentation/d/1s-gsHQZB_adoDoI699XvowXUHCgcH_XWL7NovBS1uMM/edit#slide=id.p">March 2017 solutions</a>''
+- [March 2016 questions exam/VT2016.pdf]
+- [March 2016 solutions exam/VT2016_soln.txt]
+- [August 2016 questions exam/db-exam-2016-8.pdf] (the same as in the Kahoot quiz shown at the last lecture)
+- [August 2016 solutions exam/sol-2016-8.txt]
+
+
+[Some more old exams http://www.cse.chalmers.se/edu/year/2016/course/TDA357/HT2016/exam/index.html],
+not necessarily similar.
+
 
 
 =Software=
